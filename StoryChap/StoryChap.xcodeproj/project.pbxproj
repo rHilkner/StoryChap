@@ -17,7 +17,6 @@
 		C6139B1220A9E56000B168B7 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6139B1120A9E56000B168B7 /* Character.swift */; };
 		C6139B1420A9E56B00B168B7 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6139B1320A9E56B00B168B7 /* Event.swift */; };
 		C6139B1620A9E57200B168B7 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6139B1520A9E57200B168B7 /* Game.swift */; };
-		C6139B1C20AB160D00B168B7 /* GameServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6139B1B20AB160D00B168B7 /* GameServices.swift */; };
 		C6139B2020AB162D00B168B7 /* MenuServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6139B1F20AB162D00B168B7 /* MenuServices.swift */; };
 		C6139B2220AB168A00B168B7 /* StoryPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6139B2120AB168A00B168B7 /* StoryPersistence.swift */; };
 		C6139B2420AB2A5600B168B7 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6139B2320AB2A5600B168B7 /* ViewControllerFactory.swift */; };
@@ -40,7 +39,6 @@
 		C6139B1120A9E56000B168B7 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		C6139B1320A9E56B00B168B7 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		C6139B1520A9E57200B168B7 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		C6139B1B20AB160D00B168B7 /* GameServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameServices.swift; sourceTree = "<group>"; };
 		C6139B1F20AB162D00B168B7 /* MenuServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuServices.swift; sourceTree = "<group>"; };
 		C6139B2120AB168A00B168B7 /* StoryPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPersistence.swift; sourceTree = "<group>"; };
 		C6139B2320AB2A5600B168B7 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
@@ -162,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				C6139B1F20AB162D00B168B7 /* MenuServices.swift */,
-				C6139B1B20AB160D00B168B7 /* GameServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -239,7 +236,6 @@
 			files = (
 				C667A1CF20AC692B003D2087 /* GameViewController.swift in Sources */,
 				C6139B0D20A9E4A200B168B7 /* CellFactory.swift in Sources */,
-				C6139B1C20AB160D00B168B7 /* GameServices.swift in Sources */,
 				C6139AFB20A9D5EA00B168B7 /* MenuViewController.swift in Sources */,
 				C667A1D320AC87A8003D2087 /* Scene.swift in Sources */,
 				C667A1D120AC69A0003D2087 /* SegueIds.swift in Sources */,

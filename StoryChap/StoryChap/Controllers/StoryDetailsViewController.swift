@@ -14,7 +14,11 @@ class StoryDetailsViewController: UIViewController {
 
     @IBOutlet weak var titleImage: UIImageView!
     @IBOutlet weak var storyDescription: UILabel!
+    @IBOutlet weak var playButton: UIButton!
 
+    override var preferredFocusEnvironments: [UIFocusEnvironment] {
+        return [self.playButton]
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +31,8 @@ class StoryDetailsViewController: UIViewController {
 
         self.titleImage.image = story.titleImage
         self.storyDescription.text = story.description
+
+        self.setNeedsFocusUpdate()
     }
 
     @IBAction func playButtonPressed() {

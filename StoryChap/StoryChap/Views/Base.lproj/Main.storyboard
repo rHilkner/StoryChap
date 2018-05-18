@@ -113,7 +113,7 @@
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48C-0L-D5p">
                                         <rect key="frame" x="0.0" y="212" width="870" height="459"/>
-                                        <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et tortor velit. Praesent faucibus, nibh sit amet tristique dictum, dolor nisl auctor augue, ac consequat ipsum massa eu nulla. Vivamus tincidunt velit vel leo bibendum, sit amet pretium ex scelerisque. Mauris et facilisis est, non dapibus ante. Nulla lorem turpis, pretium eu convallis sollicitudin, euismod non ligula. Curabitur a rhoncus augue. Mauris venenatis enim ac velit ullamcorper, non ultrices lectus pharetra. Vivamus fermentum mi est, sed venenatis eros rhoncus at. Donec id nulla suscipit, dignissim nibh a, fermentum est. Maecenas rutrum tincidunt egestas. Donec placerat fringilla orci in euismod.</mutableString>
+                                        <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et tortor velit. Praesent faucibus, nibh sit amet tristique dictum, dolor nisl auctor augue, ac consequat ipsum massa eu nulla. Vivamus tincidunt velit vel leo bibendum, sit amet pretium ex scelerisque. Mauris et facilisis est, non dapibus ante. Nulla lorem turpis, pretium eu convallis sollicitudin, euismod non ligula. Curabitur a rhoncus augue. Mauris venenatis enim ac velit ullamcorper, non ultrices lectus pharetra. Vivamus fermentum mi est, sed venenatis eros rhoncus at. Donec id nulla suscipit, dignissim nibh a, fermentum est. Maecenas rutrum tincidunt egestas. Donec placerat fringilla orci in euismod.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -154,6 +154,7 @@
                         <viewLayoutGuide key="safeArea" id="rtX-Lo-hKB"/>
                     </view>
                     <connections>
+                        <outlet property="playButton" destination="7m2-5z-hhF" id="uHr-Ol-QNN"/>
                         <outlet property="storyDescription" destination="48C-0L-D5p" id="cUg-ka-TSs"/>
                         <outlet property="titleImage" destination="yZu-zK-sYc" id="tfi-y0-B9f"/>
                         <segue destination="91E-Oc-eL5" kind="show" identifier="GameSegue" id="iAX-6Y-qKp"/>
@@ -179,27 +180,91 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjn-5J-iNi">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3Z-6e-IqC">
                                 <rect key="frame" x="90" y="670" width="1740" height="350"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="350" id="z51-en-3sq"/>
+                                    <constraint firstAttribute="height" constant="350" id="uZ9-vk-D8y"/>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et tortor velit. Praesent faucibus, nibh sit amet tristique dictum, dolor nisl auctor augue, ac consequat ipsum massa eu nulla. Vivamus tincidunt velit vel leo bibendum, sit amet pretium ex scelerisque. Mauris et facilisis est, non dapibus ante. Nulla lorem turpis, pretium eu convallis sollicitudin, euismod non ligula. Curabitur a rhoncus augue. Mauris venenatis enim ac velit ullamcorper, non ultrices lectus pharetra. Vivamus fermentum mi est, sed venenatis eros rhoncus at. Donec id nulla suscipit, dignissim nibh a, fermentum est. Maecenas rutrum tincidunt egestas. Donec placerat fringilla orci in euismod.</mutableString>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2a-p1-vOK">
+                                <rect key="frame" x="832" y="934" width="256" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="End Game"/>
+                                <connections>
+                                    <action selector="endGameButtonPressed" destination="91E-Oc-eL5" eventType="primaryActionTriggered" id="9Pr-83-yOi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x49-ob-Ei9">
+                                <rect key="frame" x="90" y="670" width="1740" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="fzK-RD-21b"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Option #0"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rQ-A7-alx">
+                                <rect key="frame" x="90" y="760" width="1740" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="1bV-HW-N49"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="Q93-Pa-5Qe"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Option #1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQJ-OC-3T3">
+                                <rect key="frame" x="90" y="850" width="1740" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="fIo-IU-Brv"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="hGD-Eu-wJb"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="tEX-aD-n8k"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Option #2"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpX-rk-yWZ">
+                                <rect key="frame" x="90" y="940" width="1740" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="FYN-BD-XGV"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="T3E-kb-AnA"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="p0x-3F-tMe"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Option #3"/>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="Hjn-5J-iNi" firstAttribute="leading" secondItem="ngc-1O-JIT" secondAttribute="leading" id="G1p-aj-Szi"/>
-                            <constraint firstItem="R1W-xh-16A" firstAttribute="top" secondItem="Hjn-5J-iNi" secondAttribute="bottom" id="M8o-YS-dGX"/>
-                            <constraint firstItem="ngc-1O-JIT" firstAttribute="trailing" secondItem="Hjn-5J-iNi" secondAttribute="trailing" id="bky-Cv-KDK"/>
+                            <constraint firstItem="SpX-rk-yWZ" firstAttribute="trailing" secondItem="ngc-1O-JIT" secondAttribute="trailing" id="2MO-Xl-3Mb"/>
+                            <constraint firstItem="4rQ-A7-alx" firstAttribute="trailing" secondItem="ngc-1O-JIT" secondAttribute="trailing" id="77a-nY-fw2"/>
+                            <constraint firstItem="x49-ob-Ei9" firstAttribute="leading" secondItem="ngc-1O-JIT" secondAttribute="leading" id="8e0-Mz-xXd"/>
+                            <constraint firstItem="WQJ-OC-3T3" firstAttribute="leading" secondItem="ngc-1O-JIT" secondAttribute="leading" id="Awd-m9-K20"/>
+                            <constraint firstItem="WQJ-OC-3T3" firstAttribute="top" secondItem="4rQ-A7-alx" secondAttribute="bottom" constant="10" id="DZc-0c-kLc"/>
+                            <constraint firstItem="ngc-1O-JIT" firstAttribute="trailing" secondItem="o3Z-6e-IqC" secondAttribute="trailing" id="Fx7-a0-LYz"/>
+                            <constraint firstItem="4rQ-A7-alx" firstAttribute="top" secondItem="x49-ob-Ei9" secondAttribute="bottom" constant="10" id="Oxf-zY-5YX"/>
+                            <constraint firstItem="P2a-p1-vOK" firstAttribute="centerX" secondItem="ngc-1O-JIT" secondAttribute="centerX" id="VYN-rQ-1cU"/>
+                            <constraint firstItem="ngc-1O-JIT" firstAttribute="trailing" secondItem="x49-ob-Ei9" secondAttribute="trailing" id="dsX-fb-1YJ"/>
+                            <constraint firstItem="SpX-rk-yWZ" firstAttribute="top" secondItem="WQJ-OC-3T3" secondAttribute="bottom" constant="10" id="htb-Xd-tgy"/>
+                            <constraint firstItem="o3Z-6e-IqC" firstAttribute="leading" secondItem="ngc-1O-JIT" secondAttribute="leading" id="nZe-Ne-ha6"/>
+                            <constraint firstItem="WQJ-OC-3T3" firstAttribute="trailing" secondItem="ngc-1O-JIT" secondAttribute="trailing" id="owN-3e-v8N"/>
+                            <constraint firstItem="4rQ-A7-alx" firstAttribute="leading" secondItem="ngc-1O-JIT" secondAttribute="leading" id="tMv-uT-hWM"/>
+                            <constraint firstItem="x49-ob-Ei9" firstAttribute="top" secondItem="ENf-1d-QOA" secondAttribute="bottom" constant="610" id="uwH-Eh-sLA"/>
+                            <constraint firstItem="R1W-xh-16A" firstAttribute="top" secondItem="P2a-p1-vOK" secondAttribute="bottom" id="xHi-bI-c4p"/>
+                            <constraint firstItem="SpX-rk-yWZ" firstAttribute="leading" secondItem="ngc-1O-JIT" secondAttribute="leading" id="yqU-o7-9ml"/>
+                            <constraint firstItem="R1W-xh-16A" firstAttribute="top" secondItem="o3Z-6e-IqC" secondAttribute="bottom" id="zyI-AS-NUr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ngc-1O-JIT"/>
                     </view>
                     <connections>
                         <outlet property="backgroundImage" destination="qTf-69-BUM" id="1DK-xc-hRc"/>
-                        <outlet property="textLabel" destination="Hjn-5J-iNi" id="38g-Qy-9Pa"/>
+                        <outlet property="endGameButton" destination="P2a-p1-vOK" id="6pN-oj-B03"/>
+                        <outlet property="option0Button" destination="x49-ob-Ei9" id="nww-Me-CfD"/>
+                        <outlet property="option1Button" destination="4rQ-A7-alx" id="wG4-p5-neF"/>
+                        <outlet property="option2Button" destination="WQJ-OC-3T3" id="ctH-kS-Ir3"/>
+                        <outlet property="option3Button" destination="SpX-rk-yWZ" id="CzE-hx-ZYF"/>
+                        <outlet property="textView" destination="o3Z-6e-IqC" id="7bZ-KW-dMR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cIV-cu-rzu" userLabel="First Responder" sceneMemberID="firstResponder"/>
