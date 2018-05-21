@@ -1,0 +1,60 @@
+{
+
+    "id": "1",
+    "title": "M.O.N.D.A.R.K",
+    "titleImageName": "test1",
+    "thumbnailImageName": "test1",
+    "description": "This is a test description",
+    "possibleCharacters": [
+      {
+        "name": "Test Name"
+      }
+    ],
+    "initialEvent": {
+      "id": "1",
+      "optionText": "Text",
+      "scenes": [
+        {
+          "text": "This is some test text for the Scene",
+          "imageName": "test1"
+        },
+        {
+          "text": "This is some test text for the other Scene object",
+          "imageName": "back2"
+        }
+      ],
+      "nextPossibleEvents": [
+        {
+          "id": "2",
+          "optionText": "You can choose me!",
+          "scenes": [
+            {
+               "text": "Looks like you've chose the first option!",
+               "imageName": "test1"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "optionText": "Or, you can choose me!",
+          "scenes": [
+            {
+                     "text": "Looks like you've chose the second option!",
+                     "imageName": "test1"
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "optionText": "Or, you can choose me!",
+          "scenes": [
+            {
+                     "text": "Looks like you've chose the third option!",
+                     "imageName": "test1"
+            }
+          ]
+        }
+      ]
+    }
+
+}
