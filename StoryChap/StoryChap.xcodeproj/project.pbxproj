@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6469B4D920B2B66B00123781 /* mondarkTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 6469B4D820B2B66B00123781 /* mondarkTest.json */; };
 		C6139AF920A9D5EA00B168B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6139AF820A9D5EA00B168B7 /* AppDelegate.swift */; };
 		C6139AFB20A9D5EA00B168B7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6139AFA20A9D5EA00B168B7 /* MenuViewController.swift */; };
 		C6139AFE20A9D5EA00B168B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6139AFC20A9D5EA00B168B7 /* Main.storyboard */; };
@@ -25,10 +24,11 @@
 		C667A1CF20AC692B003D2087 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C667A1CE20AC692B003D2087 /* GameViewController.swift */; };
 		C667A1D120AC69A0003D2087 /* SegueIds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C667A1D020AC69A0003D2087 /* SegueIds.swift */; };
 		C667A1D320AC87A8003D2087 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C667A1D220AC87A8003D2087 /* Scene.swift */; };
+		C779A48420B3296900F7F6C3 /* FavoriteXtorieCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = C779A48320B3296900F7F6C3 /* FavoriteXtorieCard.xib */; };
+		C779A48820B32D1D00F7F6C3 /* mondark.json in Resources */ = {isa = PBXBuildFile; fileRef = C779A48720B32D1D00F7F6C3 /* mondark.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6469B4D820B2B66B00123781 /* mondarkTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = mondarkTest.json; path = ../../../../../Downloads/mondarkTest.json; sourceTree = "<group>"; };
 		C6139AF520A9D5EA00B168B7 /* StoryChap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryChap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6139AF820A9D5EA00B168B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6139AFA20A9D5EA00B168B7 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +48,8 @@
 		C667A1CE20AC692B003D2087 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		C667A1D020AC69A0003D2087 /* SegueIds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueIds.swift; sourceTree = "<group>"; };
 		C667A1D220AC87A8003D2087 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		C779A48320B3296900F7F6C3 /* FavoriteXtorieCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteXtorieCard.xib; sourceTree = "<group>"; };
+		C779A48720B32D1D00F7F6C3 /* mondark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = mondark.json; path = StoryChap/mondark.json; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +90,6 @@
 				C6139B1720A9FF2100B168B7 /* Controllers */,
 				C6139B0820A9E2BE00B168B7 /* Views */,
 				C6139AFF20A9D5ED00B168B7 /* Assets.xcassets */,
-				6469B4D820B2B66B00123781 /* mondarkTest.json */,
 				C6139B0120A9D5ED00B168B7 /* Info.plist */,
 			);
 			path = StoryChap;
@@ -105,8 +106,10 @@
 		C6139B0820A9E2BE00B168B7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C779A48220B3293900F7F6C3 /* Xib's */,
 				C6139B0720A9E2B200B168B7 /* Cells */,
 				C6139AFC20A9D5EA00B168B7 /* Main.storyboard */,
+				C779A48720B32D1D00F7F6C3 /* mondark.json */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +170,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		C779A48220B3293900F7F6C3 /* Xib's */ = {
+			isa = PBXGroup;
+			children = (
+				C779A48320B3296900F7F6C3 /* FavoriteXtorieCard.xib */,
+			);
+			path = "Xib's";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,9 +236,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6469B4D920B2B66B00123781 /* mondarkTest.json in Resources */,
 				C6139B0020A9D5ED00B168B7 /* Assets.xcassets in Resources */,
 				C6139AFE20A9D5EA00B168B7 /* Main.storyboard in Resources */,
+				C779A48420B3296900F7F6C3 /* FavoriteXtorieCard.xib in Resources */,
+				C779A48820B32D1D00F7F6C3 /* mondark.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,5 @@
 import UIKit
 
 class StoryCollectionViewCell: UICollectionViewCell {
-    
     @IBOutlet weak var thumbnailImage: UIImageView!
-    @IBOutlet weak var storyTitleLabel: UILabel!
 }

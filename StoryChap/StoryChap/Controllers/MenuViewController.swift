@@ -8,18 +8,23 @@
 
 import UIKit
 
+//Constants with restoration ids from storyboard
+private struct RestorationIds {
+    static let favoriteCollection = "favoriteCollection"
+    static let menuCollection = "menuCollection"
+}
+
 class MenuViewController: UIViewController {
 
+    @IBOutlet weak var favoriteCollectionView: UICollectionView!
     @IBOutlet weak var collectionView: UICollectionView!
     var stories: [Story] = []
-
+    var favoriteStories: [Story] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.stories = MenuServices.allStories()
-
-        self.collectionView.dataSource = self
-        self.collectionView.delegate = self
+        self.favoriteStories = MenuServices.allStories()
         self.collectionView.reloadData()
     }
 
@@ -38,16 +43,27 @@ extension MenuViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-
-        return self.stories.count
+        switch collectionView.restorationIdentifier {
+        case RestorationIds.favoriteCollection:
+            return 4
+        case RestorationIds.menuCollection:
+            return 20
+        default:
+            return 0
+        }
+        
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = CellFactory.storyCell(collectionView: collectionView, indexPath: indexPath, story: self.stories[0])
-
-        return cell
+        switch collectionView.restorationIdentifier {
+        case RestorationIds.favoriteCollection:
+            return CellFactory.favoriteStoryCell(collectionView: collectionView, indexPath: indexPath, story: stories[0])
+        case RestorationIds.menuCollection:
+            return CellFactory.storyCell(collectionView: collectionView, indexPath: indexPath, story: stories[0])
+        default:
+            return UICollectionViewCell()
+        }
     }
-
 }
 
 // Dealing with segues

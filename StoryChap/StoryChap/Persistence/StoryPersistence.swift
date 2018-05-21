@@ -62,7 +62,7 @@ class StoryPersistence {
     
     static func decodeJson() -> Story {
         
-        let path = Bundle.main.url(forResource: "mondarkTest", withExtension: "json")
+        let path = Bundle.main.url(forResource: "mondark", withExtension: "json")
         
         var jsonData: Story?
         

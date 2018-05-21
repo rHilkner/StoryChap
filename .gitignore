@@ -113,3 +113,5 @@ playground.xcworkspace
 
 
 # End of https://www.gitignore.io/api/xcode,swift,objective-c
+
+\.DS_Store
