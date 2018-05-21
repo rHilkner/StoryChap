@@ -8,11 +8,11 @@
 
 import UIKit
 
-class Event {
+class Event: Decodable {
     let id: String
     let optionText: String
     let scenes: [Scene]
-    let nextPossibleEvents: [Event]
+    let nextPossibleEvents: [Event]?
 
     init(id: String, optionText: String, scenes: [Scene], nextPossibleEvents: [Event]) {
         self.id = id

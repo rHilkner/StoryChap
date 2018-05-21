@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Scene {
-    let image: UIImage
+struct Scene: Decodable {
+    let imageName: String?
     let text: String
 }

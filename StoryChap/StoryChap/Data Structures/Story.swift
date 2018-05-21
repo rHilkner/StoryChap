@@ -8,15 +8,15 @@
 
 import UIKit
 
-struct Story {
+struct Story: Decodable {
     let id: String
     let title: String
     let description: String
-    let numberOfPlayers: CountableClosedRange<Int>
-
-    let titleImage: UIImage
-    let thumbnailImage: UIImage
-    let coverImage: UIImage
+//    let numberOfPlayers: CountableClosedRange<Int>
+//
+    let titleImageName: String
+    let thumbnailImageName: String
+//    let coverImage: UIImage?
 
     let possibleCharacters: [Character]
     let initialEvent: Event

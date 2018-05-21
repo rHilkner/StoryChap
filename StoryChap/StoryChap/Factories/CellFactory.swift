@@ -19,7 +19,7 @@ class CellFactory {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellType.movieCell.rawValue, for: indexPath) as! StoryCollectionViewCell
 
         cell.storyTitleLabel.text = story.title
-        cell.thumbnailImage.image = story.thumbnailImage
+        cell.thumbnailImage.image = UIImage(named: story.thumbnailImageName)
 
         return cell
     }

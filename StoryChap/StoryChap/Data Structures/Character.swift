@@ -8,8 +8,8 @@
 
 import UIKit
 
-struct Character {
+struct Character: Decodable {
     var name: String
-    var image: UIImage
+//    var image: UIImage
     var currentEvent: Event?
 }

@@ -24,7 +24,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6vW-lq-oPu">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6vW-lq-oPu">
                                 <rect key="frame" x="90" y="60" width="1740" height="960"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sGJ-dl-N8k">
@@ -75,6 +75,10 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="6vW-lq-oPu" secondAttribute="trailing" id="EFG-7X-fJL"/>
+                            <constraint firstItem="6vW-lq-oPu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="EPF-iQ-2Qk"/>
+                            <constraint firstItem="6vW-lq-oPu" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" id="ROG-7v-WEm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6vW-lq-oPu" secondAttribute="bottom" id="aji-kh-sAm"/>
+                            <constraint firstItem="6vW-lq-oPu" firstAttribute="trailing" secondItem="wu6-TO-1qx" secondAttribute="trailing" id="dwT-RD-zNA"/>
                             <constraint firstItem="6vW-lq-oPu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gE4-Xh-9Pu"/>
                             <constraint firstItem="6vW-lq-oPu" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" id="rJG-Na-GGc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6vW-lq-oPu" secondAttribute="bottom" id="wqj-67-oU1"/>
@@ -180,13 +184,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3Z-6e-IqC">
-                                <rect key="frame" x="90" y="670" width="1740" height="350"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3Z-6e-IqC">
+                                <rect key="frame" x="0.0" y="0.0" width="1740" height="350"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="350" id="uZ9-vk-D8y"/>
-                                </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -242,18 +244,15 @@
                             <constraint firstItem="x49-ob-Ei9" firstAttribute="leading" secondItem="ngc-1O-JIT" secondAttribute="leading" id="8e0-Mz-xXd"/>
                             <constraint firstItem="WQJ-OC-3T3" firstAttribute="leading" secondItem="ngc-1O-JIT" secondAttribute="leading" id="Awd-m9-K20"/>
                             <constraint firstItem="WQJ-OC-3T3" firstAttribute="top" secondItem="4rQ-A7-alx" secondAttribute="bottom" constant="10" id="DZc-0c-kLc"/>
-                            <constraint firstItem="ngc-1O-JIT" firstAttribute="trailing" secondItem="o3Z-6e-IqC" secondAttribute="trailing" id="Fx7-a0-LYz"/>
                             <constraint firstItem="4rQ-A7-alx" firstAttribute="top" secondItem="x49-ob-Ei9" secondAttribute="bottom" constant="10" id="Oxf-zY-5YX"/>
                             <constraint firstItem="P2a-p1-vOK" firstAttribute="centerX" secondItem="ngc-1O-JIT" secondAttribute="centerX" id="VYN-rQ-1cU"/>
                             <constraint firstItem="ngc-1O-JIT" firstAttribute="trailing" secondItem="x49-ob-Ei9" secondAttribute="trailing" id="dsX-fb-1YJ"/>
                             <constraint firstItem="SpX-rk-yWZ" firstAttribute="top" secondItem="WQJ-OC-3T3" secondAttribute="bottom" constant="10" id="htb-Xd-tgy"/>
-                            <constraint firstItem="o3Z-6e-IqC" firstAttribute="leading" secondItem="ngc-1O-JIT" secondAttribute="leading" id="nZe-Ne-ha6"/>
                             <constraint firstItem="WQJ-OC-3T3" firstAttribute="trailing" secondItem="ngc-1O-JIT" secondAttribute="trailing" id="owN-3e-v8N"/>
                             <constraint firstItem="4rQ-A7-alx" firstAttribute="leading" secondItem="ngc-1O-JIT" secondAttribute="leading" id="tMv-uT-hWM"/>
                             <constraint firstItem="x49-ob-Ei9" firstAttribute="top" secondItem="ENf-1d-QOA" secondAttribute="bottom" constant="610" id="uwH-Eh-sLA"/>
                             <constraint firstItem="R1W-xh-16A" firstAttribute="top" secondItem="P2a-p1-vOK" secondAttribute="bottom" id="xHi-bI-c4p"/>
                             <constraint firstItem="SpX-rk-yWZ" firstAttribute="leading" secondItem="ngc-1O-JIT" secondAttribute="leading" id="yqU-o7-9ml"/>
-                            <constraint firstItem="R1W-xh-16A" firstAttribute="top" secondItem="o3Z-6e-IqC" secondAttribute="bottom" id="zyI-AS-NUr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ngc-1O-JIT"/>
                     </view>

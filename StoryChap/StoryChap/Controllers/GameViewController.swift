@@ -102,8 +102,11 @@ extension GameViewController {
             self.currentSceneIndex += 1
 
             let currentScene = eventScenes[self.currentSceneIndex]
-
-            self.backgroundImage.image = currentScene.image
+            if let currentImageForScene = currentScene.imageName {
+                self.backgroundImage.image = UIImage(named: currentImageForScene)
+            }
+            
+            
             self.textView.text = currentScene.text
 
         }
@@ -112,14 +115,9 @@ extension GameViewController {
         // In case there's no options, then show "end game" button.
         else if self.currentSceneIndex == eventScenes.endIndex-1 {
             self.currentSceneIndex += 1
-
-            guard let nextPossibleEvents = self.game?.currentEvent?.nextPossibleEvents else {
-                print("-> WARNING: Unexpectedly, the game object, or the current event, or nextPossibleEvents[] returned nil.")
-                return
-            }
-
+            
             // If there are no next possible events to chose, then the game is over
-            if nextPossibleEvents.isEmpty {
+            guard let nextPossibleEvents = self.game?.currentEvent?.nextPossibleEvents else {
                 self.displayEndGameButton()
                 return
             }
@@ -148,7 +146,7 @@ extension GameViewController {
     @objc func choiceMade(sender: UIButton) {
         let choiceIndex = sender.tag
 
-        guard let nextEvent = self.game?.currentEvent?.nextPossibleEvents[choiceIndex] else {
+        guard let nextEvent = self.game?.currentEvent?.nextPossibleEvents![choiceIndex] else {
             print("-> WARNING: Unexpectedly, the game object, or the current event, or nextPossibleEvents[] returned nil.")
             return
         }
@@ -190,7 +188,10 @@ extension GameViewController {
         }
 
         // Setting up background image and text label
-        self.backgroundImage.image = initialScene.image
+        if let initialImage = initialScene.imageName {
+            self.backgroundImage.image = UIImage(named: initialImage)
+        }
+        
         self.textView.text = initialScene.text
     }
 }

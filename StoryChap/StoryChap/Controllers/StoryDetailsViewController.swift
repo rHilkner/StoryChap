@@ -29,7 +29,7 @@ class StoryDetailsViewController: UIViewController {
             return
         }
 
-        self.titleImage.image = story.titleImage
+        self.titleImage.image = UIImage(named: story.titleImageName)
         self.storyDescription.text = story.description
 
         self.setNeedsFocusUpdate()
