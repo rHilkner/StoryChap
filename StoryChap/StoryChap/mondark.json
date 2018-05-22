@@ -20,7 +20,8 @@
                    "x": 350,
                    "y": 500,
                    "width": 1300,
-                   "height": 200
+                   "height": 200,
+                   "color": "255,255,255,255"
                    },
                    {
                    "text": "This is some test text for the other Scene object",

@@ -106,11 +106,20 @@ extension GameViewController {
                 self.backgroundImage.image = UIImage(named: currentImageForScene)
             }
             
-            let textPosition = CGRect(x: currentScene.x, y: currentScene.y, width: currentScene.width, height: currentScene.height)
-            self.textView.frame = textPosition
-
             self.textView.text = currentScene.text
-
+            
+            if let x = currentScene.x, let y = currentScene.y,
+                let width = currentScene.width, let height = currentScene.height {
+                
+                let textPosition = CGRect(x: x, y: y, width: width, height: height)
+                self.textView.frame = textPosition
+                
+            }
+            
+            if let color = currentScene.color {
+                self.textView.textColor = UIColor(hexa: color)
+            }
+            
         }
 
         // If user clicks on last scene, then show options of choices for next events to the user.
@@ -194,9 +203,20 @@ extension GameViewController {
             self.backgroundImage.image = UIImage(named: initialImage)
         }
         
-        let textPosition = CGRect(x: initialScene.x, y: initialScene.y, width: initialScene.width, height: initialScene.height)
-        self.textView.frame = textPosition
-        
         self.textView.text = initialScene.text
+        
+        // Setting up the position of the text view
+        if let x = initialScene.x, let y = initialScene.y,
+            let width = initialScene.width, let height = initialScene.height {
+            
+            let textPosition = CGRect(x: x, y: y, width: width, height: height)
+            self.textView.frame = textPosition
+            
+        }
+        
+        if let color = initialScene.color {
+            self.textView.textColor = UIColor(hexa: color)
+        }
+    
     }
 }
