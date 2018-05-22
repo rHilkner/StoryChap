@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6469B4D920B2B66B00123781 /* mondarkTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 6469B4D820B2B66B00123781 /* mondarkTest.json */; };
+		6469B4DD20B32A1400123781 /* mondark.json in Resources */ = {isa = PBXBuildFile; fileRef = 6469B4DC20B32A1400123781 /* mondark.json */; };
 		C6139AF920A9D5EA00B168B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6139AF820A9D5EA00B168B7 /* AppDelegate.swift */; };
 		C6139AFB20A9D5EA00B168B7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6139AFA20A9D5EA00B168B7 /* MenuViewController.swift */; };
 		C6139AFE20A9D5EA00B168B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6139AFC20A9D5EA00B168B7 /* Main.storyboard */; };
@@ -28,7 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6469B4D820B2B66B00123781 /* mondarkTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = mondarkTest.json; path = ../../../../../Downloads/mondarkTest.json; sourceTree = "<group>"; };
+		6469B4DC20B32A1400123781 /* mondark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mondark.json; sourceTree = "<group>"; };
 		C6139AF520A9D5EA00B168B7 /* StoryChap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryChap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6139AF820A9D5EA00B168B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6139AFA20A9D5EA00B168B7 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 				C6139B1720A9FF2100B168B7 /* Controllers */,
 				C6139B0820A9E2BE00B168B7 /* Views */,
 				C6139AFF20A9D5ED00B168B7 /* Assets.xcassets */,
-				6469B4D820B2B66B00123781 /* mondarkTest.json */,
+				6469B4DC20B32A1400123781 /* mondark.json */,
 				C6139B0120A9D5ED00B168B7 /* Info.plist */,
 			);
 			path = StoryChap;
@@ -225,7 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6469B4D920B2B66B00123781 /* mondarkTest.json in Resources */,
+				6469B4DD20B32A1400123781 /* mondark.json in Resources */,
 				C6139B0020A9D5ED00B168B7 /* Assets.xcassets in Resources */,
 				C6139AFE20A9D5EA00B168B7 /* Main.storyboard in Resources */,
 			);

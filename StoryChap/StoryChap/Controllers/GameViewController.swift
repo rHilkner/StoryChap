@@ -106,7 +106,9 @@ extension GameViewController {
                 self.backgroundImage.image = UIImage(named: currentImageForScene)
             }
             
-            
+            let textPosition = CGRect(x: currentScene.x, y: currentScene.y, width: currentScene.width, height: currentScene.height)
+            self.textView.frame = textPosition
+
             self.textView.text = currentScene.text
 
         }
@@ -191,6 +193,9 @@ extension GameViewController {
         if let initialImage = initialScene.imageName {
             self.backgroundImage.image = UIImage(named: initialImage)
         }
+        
+        let textPosition = CGRect(x: initialScene.x, y: initialScene.y, width: initialScene.width, height: initialScene.height)
+        self.textView.frame = textPosition
         
         self.textView.text = initialScene.text
     }

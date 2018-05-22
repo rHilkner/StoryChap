@@ -11,4 +11,8 @@ import UIKit
 struct Scene: Decodable {
     let imageName: String?
     let text: String
+    let x: Double
+    let y: Double
+    let width: Double
+    let height: Double
 }
