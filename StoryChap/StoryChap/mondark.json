@@ -1,81 +1,858 @@
 {
-    
-    "id": "1",
-    "title": "M.O.N.D.A.R.K",
-    "titleImageName": "test1",
-    "thumbnailImageName": "test1",
-    "description": "This is a test description",
-    "possibleCharacters": [
-                           {
-                           "name": "Test Name"
-                           }
-                           ],
-    "initialEvent": {
-        "id": "1",
-        "optionText": "Text",
-        "scenes": [
-                   {
-                   "text": "This is some test text for the Scene",
-                   "imageName": "test1",
-                   "x": 350,
-                   "y": 500,
-                   "width": 1300,
-                   "height": 200,
-                   "color": "255,255,255,255"
-                   },
-                   {
-                   "text": "This is some test text for the other Scene object",
-                   "imageName": "back2",
-                   "x": 750,
-                   "y": 500,
-                   "width": 500,
-                   "height": 200
-                   }
-                   ],
-        "nextPossibleEvents": [
-                   {
-                       "id": "2",
-                       "optionText": "You can choose me!",
-                       "scenes": [
-                          {
-                              "text": "Looks like you've chose the first option!",
-                              "imageName": "test1",
-                              "x": 350,
-                              "y": 500,
-                              "width": 500,
-                              "height": 200
-                          }
-                      ]
-                   },
-                   {
-                       "id": "3",
-                       "optionText": "Or, you can choose me!",
-                       "scenes": [
-                          {
-                              "text": "Looks like you've chose the second option!",
-                              "imageName": "test1",
-                              "x": 350,
-                              "y": 500,
-                              "width": 500,
-                              "height": 200
-                          }
-                      ]
-                   },
-                   {
-                   "id": "4",
-                   "optionText": "Or, you can choose me!",
-                   "scenes": [
-                              {
-                              "text": "Looks like you've chose the third option!",
-                              "imageName": "test1",
-                              "x": 350,
-                              "y": 500,
-                              "width": 500,
-                              "height": 200
-                  }
-              ]
-           }
-       ]
+  "id": "1",
+  "title": "M.O.N.D.A.R.K",
+  "titleImageName": "test1",
+  "thumbnailImageName": "test1",
+  "description": "This is a test description",
+  "possibleCharacters": [
+    {
+      "name": "Test Name"
     }
-    
+  ],
+  "initialEvent": {
+    "id": "1",
+    "optionText": "Text",
+    "scenes": [
+      {
+        "text": "Greetings, I am MONDARK",
+        "imageName": "chapter1.1",
+        "x": 603,
+        "y": 497,
+        "width": 714,
+        "height": 71,
+        "color": "255,255,255,255",
+        "fontName": "Champagne & Limousines",
+        "fontSize": 70
+      },
+      {
+        "text": "I’m here to aid you in your life experience",
+        "imageName": "chapter1.1",
+        "x": 1075,
+        "y": 259,
+        "width": 666,
+        "height": 148
+      },
+      {
+        "text": "it may seem confusing right now, but don’t worry, soon we’ll be best mind friends!",
+        "imageName": "chapter1.1",
+        "x": 225,
+        "y": 618,
+        "width": 687,
+        "height": 310
+      },
+      {
+        "text": "You have nothing to fear!",
+        "imageName": "chapter1.1",
+        "x": 527,
+        "y": 363,
+        "width": 866,
+        "height": 85,
+      },
+      {
+        "text": "from now on you will never feel alone again.",
+        "imageName": "chapter1.1",
+        "x": 617,
+        "y": 505,
+        "width": 687,
+        "height": 143,
+      },
+      {
+        "text": "Welcome to the hivemind",
+        "imageName": "chapter1.2",
+        "x": 311,
+        "y": 457,
+        "width": 1299,
+        "height": 124,
+        "color": "255,255,255,255",
+        "fontName": "Champagne & Limousines",
+        "fontSize": 120,
+        "transitionTimeIn": 1.5
+      },
+      {
+        "text": "For some it happened very early, but for most it happened during teenage years",
+        "imageName": "chapter1.3",
+        "x": 67,
+        "y": 59,
+        "width": 976,
+        "height": 450,
+        "fontName": "Champagne & Limousines",
+        "fontSize": 100
+      },
+      {
+        "text": "it wasn’t a voice we heard close to us",
+        "imageName": "chapter1.3",
+        "x": 481,
+        "y": 59,
+        "width": 1421,
+        "height": 99
+      },
+      {
+        "text": "instead it was inside our own minds",
+        "imageName": "chapter1.3",
+        "x": 754,
+        "y": 142,
+        "width": 976,
+        "height": 212
+      },
+      {
+        "text": "in the minds of everyone, our friends, our families.",
+        "imageName": "chapter1.3",
+        "x": 134,
+        "y": 579,
+        "width": 978,
+        "height": 212
+      },
+      {
+        "text": "MONDARK was the window that connected us all together like nothing before",
+        "imageName": "chapter1.4",
+        "x": 92,
+        "y": 185,
+        "width": 1214,
+        "height": 360,
+        "transitionTimeIn": 1.5
+      },
+      {
+        "text": "it was wonderful.",
+        "imageName": "chapter1.4",
+        "x": 287,
+        "y": 428,
+        "width": 825,
+        "height": 208,
+        "transitionTimeOut": 0.75,
+        "transitionTimeIn": 1.5
+      },
+      {
+        "text": "I don’t think so anymore.",
+        "imageName": "chapter1.5",
+        "x": 941,
+        "y": 400,
+        "width": 926,
+        "height": 99
+      },
+      {
+        "text": "A scarlet light shines upon the cup in front of me, sitting on top of the bar. Many colored lights illuminate the small club all around,",
+        "imageName": "chapter1.6",
+        "x": 56,
+        "y": 107,
+        "width": 1274,
+        "height": 436
+      },
+      {
+        "text": "a few patrons sit among the dirty tables and barely hold any conversation, a soothing low blues is being played by a band in the back, the mood is absolutely dark. I love it",
+        "imageName": "chapter1.6",
+        "x": 56,
+        "y": 107,
+        "width": 1484,
+        "height": 546
+      },
+      {
+        "text": "Being alone here, listening only to my thoughts and the songs, staring blankly at the cup, the bar and sometimes at the bartender’s weird moustache.",
+        "imageName": "chapter1.6",
+        "x": 56,
+        "y": 107,
+        "width": 1484,
+        "height": 436
+      },
+      {
+        "text": "Joel is a friendly big guy, long dark hair combed back, and of course the long equally dark and thick moustache that ends ia a thin twirl, its a funny sight.",
+        "imageName": "chapter1.6",
+        "x": 56,
+        "y": 107,
+        "width": 1484,
+        "height": 436
+      },
+      {
+        "text": "I take a look at the clock up at the wall, why do they have such a old thing anyway?",
+        "imageName": "chapter1.6",
+        "x": 56,
+        "y": 107,
+        "width": 1484,
+        "height": 317
+      },
+      {
+        "text": " I down my drink, it burns as is passes through my throat, standing up and with a nod to Joel I leave the club.",
+        "imageName": "chapter1.6",
+        "x": 56,
+        "y": 107,
+        "width": 1401,
+        "height": 317
+      },
+      {
+        "text": "Exiting through the metal door that lead to a small passage on the side of the old Adrian Bridge,",
+        "imageName": "chapter1.7",
+        "x": 107,
+        "y": 92,
+        "width": 1167,
+        "height": 436
+      },
+      {
+        "text": "a cold breeze hits me face causing a bit of a shiver, New Rooftown is always cold this time of year and …",
+        "imageName": "chapter1.7",
+        "x": 753,
+        "y": 637,
+        "width": 1167,
+        "height": 436
+      },
+      {
+        "text": "Friend, you disappeared from me again, are you alright?",
+        "imageName": "chapter1.7",
+        "x": 742,
+        "y": 113,
+        "width": 1167,
+        "height": 258
+      },
+      {
+        "text": "I’m alright MONDARK.",
+        "imageName": "chapter1.7",
+        "x": 0,
+        "y": 737,
+        "width": 1167,
+        "height": 113
+      },
+      {
+        "text": "You always disappear on me around this area, what have you been doing?",
+        "imageName": "chapter1.7",
+        "x": 742,
+        "y": 133,
+        "width": 1167,
+        "height": 317
+      },
+      {
+        "text": "Nothing you need to worry about.",
+        "imageName": "chapter1.7",
+        "x": 0,
+        "y": 737,
+        "width": 1167,
+        "height": 238
+      },
+      {
+        "text": "As I’m waling I notice a couple walking down the street, the seem distracted with each …",
+        "imageName": "chapter1.7",
+        "x": 105,
+        "y": 197,
+        "width": 1167,
+        "height": 317
+      },
+      {
+        "text": "You missed you appointment to Dr. Willson",
+        "imageName": "chapter1.7",
+        "x": 742,
+        "y": 133,
+        "width": 1167,
+        "height": 238
+      },
+      {
+        "text": "I don’t want to talk to him",
+        "imageName": "chapter1.7",
+        "x": 0,
+        "y": 737,
+        "width": 1167,
+        "height": 99
+      },
+      {
+        "text": "The couple ahead seems to notice me, a man and a woman, both around thirty and well off,",
+        "imageName": "chapter1.7",
+        "x": 68,
+        "y": 89,
+        "width": 1167,
+        "height": 436
+      },
+      {
+        "text": "their eyes grow wide and scared as they stare at my,",
+        "imageName": "chapter1.7",
+        "x": 68,
+        "y": 647,
+        "width": 1167,
+        "height": 238
+      },
+      {
+        "text": "soon they are both crossing the street in a hurry, a hoverer, seems like one of those new models, almost hits then in the head as the driver dodges to the side.",
+        "imageName": "chapter1.7",
+        "x": 83,
+        "y": 110,
+        "width": 1284,
+        "height": 546
+      },
+      {
+        "text": "…",
+        "imageName": "chapter1.7",
+        "x": 1162,
+        "y": 41,
+        "width": 747,
+        "height": 209
+      },
+      {
+        "text": "You know, this situation is not going to change until you open up a little",
+        "imageName": "chapter1.7",
+        "x": 753,
+        "y": 110,
+        "width": 1167,
+        "height": 317
+      },
+      {
+        "text": "I feel angry, frustrated, I did’t mean for things to be like this.",
+        "imageName": "chapter1.7",
+        "x": 0,
+        "y": 737,
+        "width": 1167,
+        "height": 238
+      },
+      {
+        "text": "Come on now, you don’t have to feel like that, I’m here for you!",
+        "imageName": "chapter1.7",
+        "x": 753,
+        "y": 110,
+        "width": 1167,
+        "height": 238
+      },
+      {
+        "text": "Yeah, he always is.",
+        "imageName": "chapter1.7",
+        "x": 0,
+        "y": 737,
+        "width": 1167,
+        "height": 99
+      },
+      {
+        "text": "With shivers from the cold I once again entered the Blues Under the Bridge Pub, the unique atmosphere instantly improved my mood.",
+        "imageName": "chapter1.8",
+        "x": 40,
+        "y": 630,
+        "width": 1359,
+        "height": 416
+      },
+      {
+        "text": "There’s something special about this place that can’t be had anywhere else, its sincere, authentic.",
+        "imageName": "chapter1.8",
+        "x": 40,
+        "y": 713,
+        "width": 1359,
+        "height": 317
+      },
+      {
+        "text": "This time I’m not walking towards the bar, but to a table, where sit two figures whom I’m beginning to be very fond of.",
+        "imageName": "chapter1.8",
+        "x": 40,
+        "y": 622,
+        "width": 1359,
+        "height": 416
+      },
+      {
+        "text": "As I get close both their head turn to greet me with a smile that is as warm as the establishment, on the left is Jessy Jackson, JJ,",
+        "imageName": "chapter1.8",
+        "x": 40,
+        "y": 622,
+        "width": 1359,
+        "height": 416
+      },
+      {
+        "text": "a tall woman with light brown hair and pale skin, its rare to find someone that cares so much about others like her, on the right is Leonard Martin, ",
+        "imageName": "chapter1.8",
+        "x": 40,
+        "y": 622,
+        "width": 1359,
+        "height": 416
+      },
+      {
+        "text": "everyone calls him Right Side, he has short black hair, dark skin, a thin face and is a little scrawny, ",
+        "imageName": "chapter1.8",
+        "x": 40,
+        "y": 710,
+        "width": 1428,
+        "height": 317
+      },
+      {
+        "text": "but his most notable feature is the metal cyber-arm he has where his right arm used to be,",
+        "imageName": "chapter1.8",
+        "x": 40,
+        "y": 710,
+        "width": 1428,
+        "height": 317
+      },
+      {
+        "text": "he is cocky from time to time, but for the most part he is a funny and quick on his feet friend. I take a sit beside them.",
+        "imageName": "chapter1.8",
+        "x": 40,
+        "y": 622,
+        "width": 1428,
+        "height": 416
+      },
+      {
+        "text": "Hey, you don’t look so well, everything alright?",
+        "imageName": "chapter1.8",
+        "x": 56,
+        "y": 107,
+        "width": 938,
+        "height": 217,
+        "color": "81,205,255,255"
+      },
+      {
+        "text": "Been staying up late?",
+        "imageName": "chapter1.8",
+        "x": 220,
+        "y": 801,
+        "width": 827,
+        "height": 99,
+        "color": "81,255,115,255"
+      },
+      {
+        "text": "Nah, just the usual: work, stress and shitty people. You guys look awful as well",
+        "imageName": "chapter1.8",
+        "x": 492,
+        "y": 78,
+        "width": 1428,
+        "height": 320,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "Yeah, but we’re the usual awful, yours seems special today",
+        "imageName": "chapter1.8",
+        "x": 95,
+        "y": 820,
+        "width": 1196,
+        "height": 217,
+        "color": "81,255,115,255"
+      },
+      {
+        "text": "Just small things that are annoying me more than usual, I’ll be fine",
+        "imageName": "chapter1.8",
+        "x": 600,
+        "y": 78,
+        "width": 1300,
+        "height": 217,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "Well, take the time to relax a little, god knows we all need it",
+        "imageName": "chapter1.8",
+        "x": 31,
+        "y": 72,
+        "width": 1134,
+        "height": 217,
+        "color": "81,205,255,255"
+      },
+      {
+        "text": "We take some time to sip our drinks and listen to the music as it picks up.",
+        "imageName": "chapter1.8",
+        "x": 56,
+        "y": 716,
+        "width": 1428,
+        "height": 230,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "You guys heard about the stolen truck?",
+        "imageName": "chapter1.8",
+        "x": 56,
+        "y": 767,
+        "width": 1162,
+        "height": 230,
+        "color": "81,255,115,255"
+      },
+      {
+        "text": "Stolen?! Nowadays? Who and how did they pull this off?",
+        "imageName": "chapter1.8",
+        "x": 693,
+        "y": 107,
+        "width": 1162,
+        "height": 230,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "How did you even heard about that? … Are you sure it really happened?",
+        "imageName": "chapter1.8",
+        "x": 56,
+        "y": 73,
+        "width": 1274,
+        "height": 312,
+        "color": "81,205,255,255"
+      },
+      {
+        "text": "Oh, I sure am. I still talk to people from University, word gets around, you just gotta know where",
+        "imageName": "chapter1.8",
+        "x": 56,
+        "y": 713,
+        "width": 1274,
+        "height": 312,
+        "color": "81,255,115,255"
+      },
+      {
+        "text": "How’d get around MONDARK?",
+        "imageName": "chapter1.8",
+        "x": 646,
+        "y": 107,
+        "width": 1274,
+        "height": 99,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "Joel has a jammer, he’s probably not the only one",
+        "imageName": "chapter1.8",
+        "x": 56,
+        "y": 794,
+        "width": 1274,
+        "height": 230,
+        "color": "81,255,115,255"
+      },
+      {
+        "text": "And who did it? What for?",
+        "imageName": "chapter1.8",
+        "x": 646,
+        "y": 123,
+        "width": 1274,
+        "height": 99,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "That I don’t know, but I’m looking into it",
+        "imageName": "chapter1.8",
+        "x": 56,
+        "y": 794,
+        "width": 1274,
+        "height": 230,
+        "color": "81,255,115,255"
+      },
+      {
+        "text": "You really shouldn’t, we have enough problems already and you shouldn’t be looking for more",
+        "imageName": "chapter1.8",
+        "x": 56,
+        "y": 73,
+        "width": 1274,
+        "height": 312,
+        "color": "81,205,255,255"
+      },
+      {
+        "text": "Right Side pauses and leans back a bit, JJ looks nervous, for people like us talking about this could bring a whole lot of trouble.",
+        "imageName": "chapter1.8",
+        "x": 80,
+        "y": 604,
+        "width": 1372,
+        "height": 431,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "Did your friends had anything to do with that?",
+        "imageName": "chapter1.8",
+        "x": 49,
+        "y": 90,
+        "width": 1372,
+        "height": 228,
+        "color": "81,205,255,255"
+      },
+      {
+        "text": "JJ eyes widen as she looks at Right Side and then at me, my curiosity peaks at this point",
+        "imageName": "chapter1.8",
+        "x": 96,
+        "y": 682,
+        "width": 1372,
+        "height": 341,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "What friends?",
+        "imageName": "chapter1.8",
+        "x": 96,
+        "y": 682,
+        "width": 1372,
+        "height": 341,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "An award pause follows, both of them stare at each other, in the next moment JJ turns to face me.",
+        "imageName": "chapter1.8",
+        "x": 96,
+        "y": 682,
+        "width": 1372,
+        "height": 341,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "I was going to talk to you about it anyway",
+        "imageName": "chapter1.8",
+        "x": 96,
+        "y": 118,
+        "width": 1372,
+        "height": 217,
+        "color": "81,205,255,255"
+      },
+      {
+        "text": "At this point we are not really talking, but whispering, I lean even close to her so to hear JJ over the music. She pulls something out of her purse.  She hands a card over to me, do they still make those?",
+        "imageName": "chapter1.8",
+        "x": 42,
+        "y": 508,
+        "width": 1681,
+        "height": 572,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "StoreHouse 21ºC, Old Port \n Night",
+        "imageName": "chapter1.1",
+        "x": 120,
+        "y": 478,
+        "width": 1681,
+        "height": 238,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "Oh, no.. this definitely looks like the type of thing that could get you arrested, or worse.",
+        "imageName": "chapter1.8",
+        "x": 63,
+        "y": 689,
+        "width": 1417,
+        "height": 317,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "JJ, what are you getting yourself into?",
+        "imageName": "chapter1.8",
+        "x": 745,
+        "y": 115,
+        "width": 1089,
+        "height": 217,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "Its just… you know, some friends that get together to discuss how to change things",
+        "imageName": "chapter1.8",
+        "x": 169,
+        "y": 69,
+        "width": 1212,
+        "height": 322,
+        "color": "81,205,255,255"
+      },
+      {
+        "text": "JJ, this type of thing could get you killed, and people like us… we. can’t change how things are",
+        "imageName": "chapter1.8",
+        "x": 662,
+        "y": 62,
+        "width": 1212,
+        "height": 317,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "Well, life can’t keep going like this, I can’t just sit around and do nothing!",
+        "imageName": "chapter1.8",
+        "x": 57,
+        "y": 62,
+        "width": 1212,
+        "height": 322,
+        "color": "81,205,255,255"
+      },
+      {
+        "text": "I get it, but it is still dangerous",
+        "imageName": "chapter1.8",
+        "x": 0,
+        "y": 892,
+        "width": 1212,
+        "height": 99,
+        "color": "81,255,115,255"
+      },
+      {
+        "text": "I want to take the risk",
+        "imageName": "chapter1.8",
+        "x": 0,
+        "y": 138,
+        "width": 1212,
+        "height": 99,
+        "color": "81,205,255,255"
+      },
+      {
+        "text": "Another awkward silence, damn what is she hoping to accomplish anyway? JJ looks at me",
+        "imageName": "chapter1.8",
+        "x": 126,
+        "y": 634,
+        "width": 1267,
+        "height": 327,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "If you want to help too, you can… you know, show up",
+        "imageName": "chapter1.8",
+        "x": 31,
+        "y": 786,
+        "width": 1267,
+        "height": 260,
+        "color": "81,255,115,255"
+      },
+      {
+        "text": "I don’t know, this can make life a lot worse",
+        "imageName": "chapter1.8",
+        "x": 653,
+        "y": 104,
+        "width": 1267,
+        "height": 217,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "People like us, getting together to change things, even if its just talking, it is as excuse to get rid of us. They are just talking, right?",
+        "imageName": "chapter1.8",
+        "x": 154,
+        "y": 540,
+        "width": 1267,
+        "height": 436,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "So, the theft, was it them?",
+        "imageName": "chapter1.8",
+        "x": 0,
+        "y": 120,
+        "width": 1267,
+        "height": 99,
+        "color": "81,205,255,255"
+      },
+      {
+        "text": "And yet another pause",
+        "imageName": "chapter1.8",
+        "x": 154,
+        "y": 808,
+        "width": 1267,
+        "height": 99,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "I can’t say",
+        "imageName": "chapter1.8",
+        "x": 130,
+        "y": 818,
+        "width": 701,
+        "height": 99,
+        "color": "81,255,115,255"
+      },
+      {
+        "text": "I’m probably looking really nervous right now, I feel really nervous, JJ turns to me",
+        "imageName": "chapter1.8",
+        "x": 154,
+        "y": 626,
+        "width": 1267,
+        "height": 317,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "Its gonna be alright",
+        "imageName": "chapter1.8",
+        "x": 130,
+        "y": 818,
+        "width": 830,
+        "height": 99,
+        "color": "81,255,115,255"
+      },
+      {
+        "text": "You don’t know that",
+        "imageName": "chapter1.8",
+        "x": 95,
+        "y": 139,
+        "width": 830,
+        "height": 99,
+        "color": "81,205,255,255"
+      },
+      {
+        "text": "Guys, things are not going to get better you know, ",
+        "imageName": "chapter1.8",
+        "x": 58,
+        "y": 741,
+        "width": 1349,
+        "height": 217,
+        "color": "81,255,115,255"
+      },
+      {
+        "text": "its only getting worse and they’ll keep getting worse unless we get together and do something about it",
+        "imageName": "chapter1.8",
+        "x": 58,
+        "y": 668,
+        "width": 1349,
+        "height": 317,
+        "color": "81,255,115,255"
+      },
+      {
+        "text": "She keeps looking to the sides, me and Right Side can clearly see she’s scared, I think we all are.",
+        "imageName": "chapter1.8",
+        "x": 205,
+        "y": 623,
+        "width": 1349,
+        "height": 317,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "This silence goes on for a little while, I really don’t want things to backfire, this life hasn’t given me many friends and JJ is a really nice girl.",
+        "imageName": "chapter1.8",
+        "x": 205,
+        "y": 623,
+        "width": 1349,
+        "height": 405,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "Right Side stands up and picks his jacket, he looks the most composed out of the three of us.",
+        "imageName": "chapter1.8",
+        "x": 205,
+        "y": 663,
+        "width": 1349,
+        "height": 314,
+        "color": "255,255,255,255"
+      },
+      {
+        "text": "I think we’ll need some time to process all of that, come on, lets walk home",
+        "imageName": "chapter1.8",
+        "x": 0,
+        "y": 67,
+        "width": 1349,
+        "height": 314,
+        "color": "81,205,255,255"
+      },
+      {
+        "text": "We pay our bills and leave the bar, Joel asks us if everything is alright, we probably look stressed beyond belief.",
+        "imageName": "chapter1.8",
+        "x": 163,
+        "y": 668,
+        "width": 1436,
+        "height": 314,
+        "color": "255,255,255,255"
+      }
+    ],
+    "nextPossibleEvents": [
+      {
+        "id": "2",
+        "optionText": "You can choose me!",
+        "scenes": [
+          {
+            "text": "Looks like you've chose the first option!",
+            "imageName": "chapter1.2",
+            "x": 350,
+            "y": 500,
+            "width": 500,
+            "height": 200
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "optionText": "Or, you can choose me!",
+        "scenes": [
+          {
+            "text": "Looks like you've chose the second option!",
+            "imageName": "chapter1.2",
+            "x": 350,
+            "y": 500,
+            "width": 500,
+            "height": 200
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "optionText": "Or, you can choose me!",
+        "scenes": [
+          {
+            "text": "Looks like you've chose the third option!",
+            "imageName": "chapter1.2",
+            "x": 350,
+            "y": 500,
+            "width": 500,
+            "height": 200
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6469B4DD20B32A1400123781 /* mondark.json in Resources */ = {isa = PBXBuildFile; fileRef = 6469B4DC20B32A1400123781 /* mondark.json */; };
 		64AAE60120B438250050EA83 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AAE60020B438250050EA83 /* Utils.swift */; };
+		64AAE60320B447900050EA83 /* Champagne & Limousines.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AAE60220B447870050EA83 /* Champagne & Limousines.ttf */; };
+		64AAE60620B4597E0050EA83 /* GameViewController+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AAE60520B4597E0050EA83 /* GameViewController+Animation.swift */; };
 		C6139AF920A9D5EA00B168B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6139AF820A9D5EA00B168B7 /* AppDelegate.swift */; };
 		C6139AFB20A9D5EA00B168B7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6139AFA20A9D5EA00B168B7 /* MenuViewController.swift */; };
 		C6139AFE20A9D5EA00B168B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6139AFC20A9D5EA00B168B7 /* Main.storyboard */; };
@@ -31,6 +33,8 @@
 /* Begin PBXFileReference section */
 		6469B4DC20B32A1400123781 /* mondark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mondark.json; sourceTree = "<group>"; };
 		64AAE60020B438250050EA83 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		64AAE60220B447870050EA83 /* Champagne & Limousines.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Champagne & Limousines.ttf"; sourceTree = "<group>"; };
+		64AAE60520B4597E0050EA83 /* GameViewController+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameViewController+Animation.swift"; sourceTree = "<group>"; };
 		C6139AF520A9D5EA00B168B7 /* StoryChap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryChap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6139AF820A9D5EA00B168B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6139AFA20A9D5EA00B168B7 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64AAE60420B459500050EA83 /* GameViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C667A1CE20AC692B003D2087 /* GameViewController.swift */,
+				64AAE60520B4597E0050EA83 /* GameViewController+Animation.swift */,
+			);
+			path = GameViewController;
+			sourceTree = "<group>";
+		};
 		C6139AEC20A9D5EA00B168B7 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +104,7 @@
 				C6139B0820A9E2BE00B168B7 /* Views */,
 				C6139AFF20A9D5ED00B168B7 /* Assets.xcassets */,
 				6469B4DC20B32A1400123781 /* mondark.json */,
+				64AAE60220B447870050EA83 /* Champagne & Limousines.ttf */,
 				C6139B0120A9D5ED00B168B7 /* Info.plist */,
 			);
 			path = StoryChap;
@@ -138,9 +152,9 @@
 		C6139B1720A9FF2100B168B7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				64AAE60420B459500050EA83 /* GameViewController */,
 				C6139AFA20A9D5EA00B168B7 /* MenuViewController.swift */,
 				C6139B2520AB2B0400B168B7 /* StoryDetailsViewController.swift */,
-				C667A1CE20AC692B003D2087 /* GameViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -228,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64AAE60320B447900050EA83 /* Champagne & Limousines.ttf in Resources */,
 				6469B4DD20B32A1400123781 /* mondark.json in Resources */,
 				C6139B0020A9D5ED00B168B7 /* Assets.xcassets in Resources */,
 				C6139AFE20A9D5EA00B168B7 /* Main.storyboard in Resources */,
@@ -250,6 +265,7 @@
 				C6139B0A20A9E3D500B168B7 /* StoryCollectionViewCell.swift in Sources */,
 				64AAE60120B438250050EA83 /* Utils.swift in Sources */,
 				C6139B1220A9E56000B168B7 /* Character.swift in Sources */,
+				64AAE60620B4597E0050EA83 /* GameViewController+Animation.swift in Sources */,
 				C6139AF920A9D5EA00B168B7 /* AppDelegate.swift in Sources */,
 				C6139B1020A9E54C00B168B7 /* Story.swift in Sources */,
 				C6139B2020AB162D00B168B7 /* MenuServices.swift in Sources */,

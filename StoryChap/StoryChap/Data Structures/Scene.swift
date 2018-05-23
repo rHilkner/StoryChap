@@ -16,4 +16,8 @@ struct Scene: Decodable {
     let width: Double?
     let height: Double?
     let color: String?
+    let fontName: String?
+    let fontSize: Double?
+    let transitionTimeIn: Double?
+    let transitionTimeOut: Double?
 }
