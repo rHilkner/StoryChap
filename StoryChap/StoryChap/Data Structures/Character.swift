@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Character: Decodable {
+struct Character {
     var name: String
 //    var image: UIImage
     var currentEvent: Event?

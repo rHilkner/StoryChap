@@ -11,71 +11,132 @@ import UIKit
 class StoryPersistence {
 
     static func allStories() -> [Story] {
-//        let initialScene = Scene(
-////            image: UIImage(),
-//                                 text: "This is the first scene ever! Xupita is awesome btw...")
-//
-//        let secondScene = Scene(
-////            image: UIImage(),
-//                                 text: "This is the second scene ever! Xupita is still awesome btw...")
-//
-//        let nextScene = Scene(
-////            image: UIImage(),
-//                              text: "This is the scene of the next option! Xupita is god...")
-//
-//        let nextScene2 = Scene(
-////            image: UIImage(),
-//                              text: "This is the scene of the next option! Xupita is god...")
-//
-//        let secondEvent = Event(id: "2",
-//                                optionText: "escolhe eu pls",
-//                                scenes: [nextScene],
-//                                nextPossibleEvents: [])
-//
-//        let thirdEvent = Event(id: "3",
-//                                optionText: "escolhe eu pls2",
-//                                scenes: [nextScene2],
-//                                nextPossibleEvents: [])
-//
-//        let initialEvent = Event(id: "1",
-//                                 optionText: "escolhe eu carai",
-//                                 scenes: [initialScene, secondScene],
-//                                 nextPossibleEvents: [secondEvent, thirdEvent])
-//
-//        let story = Story(id: "aa",
-//                          title: "M.O.N.D.A.R.K.",
-//                          description: "This is so black mirror",
-////                          numberOfPlayers: (1...1),
-////                          titleImage: UIImage(),
-////                          thumbnailImage: UIImage(),
-////                          coverImage: UIImage(),
-//                          possibleCharacters: [],
-//                          initialEvent: initialEvent)
 
-        let newStory = decodeJson()
+        guard let newStory = decodeJson() else {
+            return []
+        }
         
         return [newStory]
-//        } else {
-//            return [story, story, story, story, story, story, story, story, story, story, story, story]
-//        }
     }
-    
-    static func decodeJson() -> Story {
-        
+
+    static func decodeJson() -> Story? {
+
+        // Reading JSON data as dictionary
         let path = Bundle.main.url(forResource: "mondark", withExtension: "json")
-        
-        var jsonData: Story?
-        
-            do {
-                
-                let data = try Data(contentsOf: path!)
-                let decoder = JSONDecoder()
-                jsonData = try decoder.decode(Story.self, from: data)
-                
-            } catch let error {
-                print(error)
+
+        let storyDictionary: [String : Any]
+
+        do {
+            let data = try Data(contentsOf: path!)
+            let jsonData = try JSONSerialization.jsonObject(with: data, options: [])
+            storyDictionary = jsonData as! [String : Any]
+
+        } catch {
+            print("-> WARNING: Error when converting JSON to dictionary.")
+            return nil
+        }
+
+        // Reading story information from dictionary
+        guard let id = storyDictionary["id"] as? String,
+              let title = storyDictionary["title"] as? String,
+              let titleImageName = storyDictionary["titleImageName"] as? String,
+              let thumbnailImageName = storyDictionary["thumbnailImageName"] as? String,
+              let description = storyDictionary["description"] as? String,
+              let possibleChars = storyDictionary["possibleCharacters"] as? [[String : Any]] else {
+            print("-> WARNING: Error when reading story dictionary.")
+            return nil
+        }
+
+        // Reading list of possible characters for the story
+        var possibleCharacters = [Character]()
+
+        for character in possibleChars {
+            guard let characterName = character["name"] as? String else {
+                print("-> WARNING: Error when reading character dictionary.")
+                return nil
             }
-        
-        return jsonData!
+
+            let char = Character(name: characterName, currentEvent: nil)
+            possibleCharacters.append(char)
+        }
+
+        // Getting dictionary of events
+        guard let initialEventId = storyDictionary["initialEvent"] as? String,
+              let eventsDict = storyDictionary["events"] as? [[String : Any]] else {
+            print("-> WARNING: Error when reading story dictionary.")
+            return nil
+        }
+
+        // Reading events of the story
+        var events = [Event]()
+        var eventTree = [String : [String]]()
+        var eventsReferencedById = [String : Event]()
+
+        for eventDict in eventsDict {
+            guard let eventId = eventDict["id"] as? String,
+                  let optionText = eventDict["optionText"] as? String,
+                  let scenesDict = eventDict["scenes"] as? [[String : Any]] else {
+                print("-> WARNING: Error when reading event dictionary.")
+                return nil
+            }
+
+            // Getting scenes of the event
+            var scenes = [Scene]()
+
+            for sceneDict in scenesDict {
+                guard let sceneText = sceneDict["text"] as? String,
+                      let imageName = sceneDict["imageName"] as? String,
+                      let x = sceneDict["x"] as? Double,
+                      let y = sceneDict["y"] as? Double,
+                      let width = sceneDict["width"] as? Double,
+                      let height = sceneDict["height"] as? Double else {
+                    print("-> WARNING: Error when reading scene dictionary.")
+                    return nil
+                }
+
+                // Adding scene to list of scenes
+                let scene = Scene(imageName: imageName, text: sceneText, x: x, y: y, width: width, height: height)
+                scenes.append(scene)
+            }
+
+            // Creating event and appending to array of events
+            let event = Event(id: eventId, optionText: optionText, scenes: scenes, nextPossibleEvents: [])
+            events.append(event)
+
+            guard let nextPossibleEvents = eventDict["nextPossibleEvents"] as? [String] else {
+                print("-> WARNING: Error when reading event dictionary.")
+                return nil
+            }
+
+            eventTree[event.id] = nextPossibleEvents
+            eventsReferencedById[event.id] = event
+        }
+
+        var initialEvent: Event!
+
+        for event in events {
+            // Finding initial event
+            if event.id == initialEventId {
+                initialEvent = event
+            }
+
+            // Building events graph
+            for nextEventId in eventTree[event.id]! {
+                event.nextPossibleEvents.append(eventsReferencedById[nextEventId]!)
+            }
+        }
+
+        // Returning story
+        let story = Story(id: id,
+                          title: title,
+                          description: description,
+                          titleImageName: titleImageName,
+                          thumbnailImageName: thumbnailImageName,
+                          possibleCharacters: possibleCharacters,
+                          initialEvent: initialEvent)
+
+        return story
     }
+
+
 }
