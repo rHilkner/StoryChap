@@ -67,15 +67,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		64AAE60420B459500050EA83 /* GameViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C667A1CE20AC692B003D2087 /* GameViewController.swift */,
-				64AAE60520B4597E0050EA83 /* GameViewController+Animation.swift */,
-			);
-			path = GameViewController;
-			sourceTree = "<group>";
-		};
 		C6139AEC20A9D5EA00B168B7 = {
 			isa = PBXGroup;
 			children = (
@@ -152,8 +143,9 @@
 		C6139B1720A9FF2100B168B7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				64AAE60420B459500050EA83 /* GameViewController */,
 				C6139AFA20A9D5EA00B168B7 /* MenuViewController.swift */,
+				C667A1CE20AC692B003D2087 /* GameViewController.swift */,
+				64AAE60520B4597E0050EA83 /* GameViewController+Animation.swift */,
 				C6139B2520AB2B0400B168B7 /* StoryDetailsViewController.swift */,
 			);
 			path = Controllers;
