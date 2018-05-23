@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Story: Decodable {
+struct Story {
     let id: String
     let title: String
     let description: String

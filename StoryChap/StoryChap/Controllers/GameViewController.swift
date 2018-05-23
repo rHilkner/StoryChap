@@ -46,19 +46,25 @@ class GameViewController: UIViewController {
         self.initializeUIComponents()
     }
 
-    /// Sets up game current event as story initial event, and also sets up background image and text label for current event scene
+    /// Sets up interface components (labels, buttons, tap gestures) and sets game current event as story initial event
     func initializeUIComponents() {
 
-        // Adding tap gesture recognizer
-        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(selectButtonTapped))
-        tapRecognizer.allowedPressTypes = [NSNumber(value: UIPressType.select.rawValue)]
-        self.view.addGestureRecognizer(tapRecognizer)
+        // Adding tap gesture recognizer to go to next scene
+        let nextSceneTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(nextSceneTapGesture))
+        nextSceneTapRecognizer.allowedPressTypes = [NSNumber(value: UIPressType.select.rawValue), NSNumber(value: UIPressType.rightArrow.rawValue)]
+        self.view.addGestureRecognizer(nextSceneTapRecognizer)
+
+        // Adding tap gesture recognizer to go to previous scene
+        let previousSceneTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(previousSceneTapGesture))
+        previousSceneTapRecognizer.allowedPressTypes = [NSNumber(value: UIPressType.leftArrow.rawValue)]
+        self.view.addGestureRecognizer(previousSceneTapRecognizer)
 
         // Initializing array of choices buttons
         self.choicesButtons = [self.option0Button,
                                self.option1Button,
                                self.option2Button,
                                self.option3Button]
+
         for i in 0..<self.choicesButtons.count {
             self.choicesButtons[i].isHidden = true
             self.choicesButtons[i].isEnabled = false
@@ -80,7 +86,6 @@ class GameViewController: UIViewController {
         self.setGame(for: initialEvent)
     }
 
-
     // When end game button is pressed return to last view controller on hierarchy
     @IBAction func endGameButtonPressed() {
         self.dismiss(animated: true, completion: nil)
@@ -91,17 +96,17 @@ class GameViewController: UIViewController {
 extension GameViewController {
 
     /// Function called when "select" tap gesture occures
-    @objc func selectButtonTapped() {
-        guard let eventScenes = self.game?.currentEvent?.scenes else {
-            print("-> WARNING: Event scenes found nil")
+    @objc func nextSceneTapGesture() {
+        guard let event = self.game?.currentEvent else {
+            print("-> WARNING: Current event found nil")
             return
         }
 
         // For every scene, when clicked, show next scene
-        if self.currentSceneIndex < eventScenes.endIndex-1 {
+        if self.currentSceneIndex < event.scenes.endIndex-1 {
             self.currentSceneIndex += 1
 
-            let currentScene = eventScenes[self.currentSceneIndex]
+            let currentScene = event.scenes[self.currentSceneIndex]
             if let currentImageForScene = currentScene.imageName {
                 self.backgroundImage.image = UIImage(named: currentImageForScene)
             }
@@ -115,17 +120,40 @@ extension GameViewController {
 
         // If user clicks on last scene, then show options of choices for next events to the user.
         // In case there's no options, then show "end game" button.
-        else if self.currentSceneIndex == eventScenes.endIndex-1 {
+        else if self.currentSceneIndex == event.scenes.endIndex-1 {
             self.currentSceneIndex += 1
             
-            // If there are no next possible events to chose, then the game is over
-            guard let nextPossibleEvents = self.game?.currentEvent?.nextPossibleEvents else {
+            // Reading next possible events after this one
+            if event.nextPossibleEvents.isEmpty {
                 self.displayEndGameButton()
                 return
             }
 
             // Display a set of buttons representing every possible choice the user may take
-            self.displayChoicesButtons(choices: nextPossibleEvents)
+            self.displayChoicesButtons(choices: event.nextPossibleEvents)
+        }
+    }
+
+    /// Function called when "select" tap gesture occures
+    @objc func previousSceneTapGesture() {
+        guard let eventScenes = self.game?.currentEvent?.scenes else {
+            print("-> WARNING: Event scenes found nil")
+            return
+        }
+
+        // For every scene except first and when the user is making a choice (after last scene), if clicked, show previous scene
+        if self.currentSceneIndex > 0 && self.currentSceneIndex < eventScenes.endIndex {
+            self.currentSceneIndex -= 1
+
+            let currentScene = eventScenes[self.currentSceneIndex]
+            if let currentImageForScene = currentScene.imageName {
+                self.backgroundImage.image = UIImage(named: currentImageForScene)
+            }
+
+            let textPosition = CGRect(x: currentScene.x, y: currentScene.y, width: currentScene.width, height: currentScene.height)
+            self.textView.frame = textPosition
+
+            self.textView.text = currentScene.text
         }
     }
 
@@ -148,7 +176,7 @@ extension GameViewController {
     @objc func choiceMade(sender: UIButton) {
         let choiceIndex = sender.tag
 
-        guard let nextEvent = self.game?.currentEvent?.nextPossibleEvents![choiceIndex] else {
+        guard let nextEvent = self.game?.currentEvent?.nextPossibleEvents[choiceIndex] else {
             print("-> WARNING: Unexpectedly, the game object, or the current event, or nextPossibleEvents[] returned nil.")
             return
         }
