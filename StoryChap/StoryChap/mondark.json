@@ -808,15 +808,199 @@
         "width": 1436,
         "height": 314,
         "color": "255,255,255,255"
+      },
+      {
+        "text": "We walk under the bridge, the entrance to the pub in sights, when from above we see four police hover vans flying towards the hidden path to Blues Under the Bridge",
+        "imageName": "chapter1.9",
+        "x": 535,
+        "y": 540,
+        "width": 1359,
+        "height": 500
+      },
+      {
+        "text": "a dozen or so armed man go through the entrance we just left out of. We can do nothing but stand there and watch.",
+        "imageName": "chapter1.9",
+        "x": 538,
+        "y": 632,
+        "width": 1359,
+        "height": 400
+      },
+      {
+        "text": "Dammit, not this place! \n We hear the loud noise of a door breaking",
+        "imageName": "chapter1.9",
+        "x": 538,
+        "y": 632,
+        "width": 1359,
+        "height": 317
+      },
+      {
+        "text": "There aren’t any others like it.\n We hear screams",
+        "imageName": "chapter1.9",
+        "x": 545,
+        "y": 707,
+        "width": 1359,
+        "height": 227
+      },
+      {
+        "text": "We had so many good moments there!\nGunshots…",
+        "imageName": "chapter1.9",
+        "x": 672,
+        "y": 705,
+        "width": 1188,
+        "height": 317
+      },
+      {
+        "text": "Right Side turns to JJ",
+        "imageName": "chapter1.9",
+        "x": 672,
+        "y": 705,
+        "width": 1188,
+        "height": 99
+      },
+      {
+        "text": "I'm in…",
+        "imageName": "chapter1.9",
+        "x": 1452,
+        "y": 875,
+        "width": 265,
+        "height": 99
+      },
+      {
+        "text": "He could barely end the phrase before..",
+        "imageName": "chapter1.9",
+        "x": 675,
+        "y": 755,
+        "width": 1188,
+        "height": 209
+      },
+      {
+        "text": "Friend, I was worried, there seems to be a disturbance near you, we should leave right now and go home",
+        "imageName": "chapter1.9",
+        "x": 670,
+        "y": 105,
+        "width": 1188,
+        "height": 410
+      },
+      {
+        "text": "As soon as I heard that voice the small red eye with a diagonal line crossing it appeared above both their heads,",
+        "imageName": "chapter1.9",
+        "x": 561,
+        "y": 624,
+        "width": 1359,
+        "height": 410
+      },
+      {
+        "text": "We don’t stay there too long, right after hearing MONDARK we started walking away,",
+        "imageName": "chapter1.9",
+        "x": 696,
+        "y": 692,
+        "width": 1193,
+        "height": 317
+      },
+      {
+        "text": "what Right Side said is still in my mind, was he really going to join?",
+        "imageName": "chapter1.9",
+        "x": 739,
+        "y": 725,
+        "width": 1118,
+        "height": 317
+      },
+      {
+        "text": "Join what, friend? Is everything alright?",
+        "imageName": "chapter1.9",
+        "x": 842,
+        "y": 107,
+        "width": 1058,
+        "height": 217
+      },
+      {
+        "text": "Shit",
+        "imageName": "chapter1.9",
+        "x": 1511,
+        "y": 377,
+        "width": 128,
+        "height": 99
+      },
+      {
+        "text": "Nothing, its nothing\n MONDARK",
+        "imageName": "chapter1.9",
+        "x": 157,
+        "y": 738,
+        "width": 762,
+        "height": 217
+      },
+      {
+        "text": "Both JJ and Right Side look stiff and scared, she suddenly stops",
+        "imageName": "chapter1.9",
+        "x": 787,
+        "y": 678,
+        "width": 1088,
+        "height": 317
+      },
+      {
+        "text": "I'll see you there tomorrow then",
+        "imageName": "chapter1.9",
+        "x": 1033,
+        "y": 763,
+        "width": 751,
+        "height": 217
+      },
+      {
+        "text": "She nods to Right Side, who nods back, and proceeds to give me a serious look before walking away in a different direction,",
+        "imageName": "chapter1.9",
+        "x": 759,
+        "y": 540,
+        "width": 1142,
+        "height": 501
+      },
+      {
+        "text": " home I hope. Short after Right Side nods to me too and starts walking in the same direction as JJ.",
+        "imageName": "chapter1.9",
+        "x": 759,
+        "y": 623,
+        "width": 1142,
+        "height": 417
+      },
+      {
+        "text": "WHAT AM I SUPPOSE TO DO?",
+        "imageName": "chapter1.9",
+        "x": 759,
+        "y": 791,
+        "width": 1142,
+        "height": 99
+      },
+      {
+        "text": "Friend, is everything alright?",
+        "imageName": "chapter1.9",
+        "x": 1076,
+        "y": 107,
+        "width": 708,
+        "height": 217
+      },
+      {
+        "text": "Where are mister Leonard and Miss Jessy going tomorrow? Is there something I should know? Are you going too?",
+        "imageName": "chapter1.9",
+        "x": 620,
+        "y": 140,
+        "width": 1232,
+        "height": 417
+      },
+      {
+        "text": "Where are mister Leonard and Miss Jessy going tomorrow? Is there something I should know? Are you going too?",
+        "imageName": "chapter1.9",
+        "x": 620,
+        "y": 140,
+        "width": 1232,
+        "height": 417
       }
     ],
     "nextPossibleEvents": [
       {
         "id": "2",
-        "optionText": "You can choose me!",
+        "optionText": "Yeah.. I’ll be busy tomorrow (Go with them to the meeting)",
         "scenes": [
           {
-            "text": "Looks like you've chose the first option!",
+            "text": "",
             "imageName": "chapter1.2",
             "x": 350,
             "y": 500,
@@ -827,24 +1011,10 @@
       },
       {
         "id": "3",
-        "optionText": "Or, you can choose me!",
+        "optionText": "No MONDARK, I think I’m free from tomorrow on (Go home and don’t get involved)",
         "scenes": [
           {
             "text": "Looks like you've chose the second option!",
-            "imageName": "chapter1.2",
-            "x": 350,
-            "y": 500,
-            "width": 500,
-            "height": 200
-          }
-        ]
-      },
-      {
-        "id": "4",
-        "optionText": "Or, you can choose me!",
-        "scenes": [
-          {
-            "text": "Looks like you've chose the third option!",
             "imageName": "chapter1.2",
             "x": 350,
             "y": 500,
