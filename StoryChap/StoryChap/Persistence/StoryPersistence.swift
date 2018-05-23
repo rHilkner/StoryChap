@@ -84,18 +84,25 @@ class StoryPersistence {
             var scenes = [Scene]()
 
             for sceneDict in scenesDict {
+                
                 guard let sceneText = sceneDict["text"] as? String,
-                      let imageName = sceneDict["imageName"] as? String,
-                      let x = sceneDict["x"] as? Double,
-                      let y = sceneDict["y"] as? Double,
-                      let width = sceneDict["width"] as? Double,
-                      let height = sceneDict["height"] as? Double else {
+                    let imageName = sceneDict["imageName"] as? String else {
                     print("-> WARNING: Error when reading scene dictionary.")
                     return nil
                 }
-
+                
+                let x = sceneDict["x"] as? Double
+                let y = sceneDict["y"] as? Double
+                let width = sceneDict["width"] as? Double
+                let height = sceneDict["height"] as? Double
+                let color = sceneDict["color"] as? String
+                let fontName = sceneDict["fontName"] as? String
+                let fontSize = sceneDict["fontSize"] as? Double
+                let transitionTimeIn = sceneDict["transitionTimeIn"] as? Double
+                let transitionTimeOut = sceneDict["transitionTimeOut"] as? Double
+                
                 // Adding scene to list of scenes
-                let scene = Scene(imageName: imageName, text: sceneText, x: x, y: y, width: width, height: height)
+                let scene = Scene(imageName: imageName, text: sceneText, x: x, y: y, width: width, height: height, color: color, fontName: fontName, fontSize: fontSize, transitionTimeIn: transitionTimeIn, transitionTimeOut: transitionTimeOut)
                 scenes.append(scene)
             }
 
@@ -103,12 +110,17 @@ class StoryPersistence {
             let event = Event(id: eventId, optionText: optionText, scenes: scenes, nextPossibleEvents: [])
             events.append(event)
 
-            guard let nextPossibleEvents = eventDict["nextPossibleEvents"] as? [String] else {
-                print("-> WARNING: Error when reading event dictionary.")
-                return nil
+//            guard let nextPossibleEvents = eventDict["nextPossibleEvents"] as? [String] else {
+//                print("-> WARNING: Error when reading event dictionary.")
+//                return nil
+//            }
+            
+            if let nextPossibleEvents = eventDict["nextPossibleEvents"] as? [String] {
+                eventTree[event.id] = nextPossibleEvents
+            } else {
+                eventTree[event.id] = []
             }
 
-            eventTree[event.id] = nextPossibleEvents
             eventsReferencedById[event.id] = event
         }
 

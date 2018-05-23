@@ -107,7 +107,7 @@ extension GameViewController {
         if self.currentSceneIndex < event.scenes.endIndex-1 {
             self.currentSceneIndex += 1
 
-            let currentScene = eventScenes[self.currentSceneIndex]
+            let currentScene = event.scenes[self.currentSceneIndex]
             self.changeScene(newScene: currentScene)
         }
 
@@ -139,14 +139,8 @@ extension GameViewController {
             self.currentSceneIndex -= 1
 
             let currentScene = eventScenes[self.currentSceneIndex]
-            if let currentImageForScene = currentScene.imageName {
-                self.backgroundImage.image = UIImage(named: currentImageForScene)
-            }
-
-            let textPosition = CGRect(x: currentScene.x, y: currentScene.y, width: currentScene.width, height: currentScene.height)
-            self.textView.frame = textPosition
-
-            self.textView.text = currentScene.text
+            
+            self.changeScene(newScene: currentScene)
         }
     }
 
@@ -209,31 +203,32 @@ extension GameViewController {
             print("-> WARNING: Initial scene returned nil")
             return
         }
-
-        // Setting up background image and text label
-        if let initialImage = initialScene.imageName {
-            self.backgroundImage.image = UIImage(named: initialImage)
-        }
         
-        self.label.text = initialScene.text
-        
-        // Setting up the position of the text view
-        if let x = initialScene.x, let y = initialScene.y,
-            let width = initialScene.width, let height = initialScene.height {
-            
-            let textPosition = CGRect(x: x, y: y, width: width, height: height)
-            self.label.frame = textPosition
-            
-        }
-        
-        if let color = initialScene.color {
-            self.label.textColor = UIColor(hexa: color)
-        }
-        
-        if let fontName = initialScene.fontName,
-            let fontSize = initialScene.fontSize {
-            self.label.font = UIFont(name: fontName, size: CGFloat(fontSize))
-        }
+//        // Setting up background image and text label
+//        if let initialImage = initialScene.imageName {
+//            self.backgroundImage.image = UIImage(named: initialImage)
+//        }
+//
+//        self.label.text = initialScene.text
+//
+//        // Setting up the position of the text view
+//        if let x = initialScene.x, let y = initialScene.y,
+//            let width = initialScene.width, let height = initialScene.height {
+//
+//            let textPosition = CGRect(x: x, y: y, width: width, height: height)
+//            self.label.frame = textPosition
+//
+//        }
+//
+//        if let color = initialScene.color {
+//            self.label.textColor = UIColor(hexa: color)
+//        }
+//
+//        if let fontName = initialScene.fontName,
+//            let fontSize = initialScene.fontSize {
+//            self.label.font = UIFont(name: fontName, size: CGFloat(fontSize))
+//        }
+        self.changeScene(newScene: initialScene)
     
     }
 }
