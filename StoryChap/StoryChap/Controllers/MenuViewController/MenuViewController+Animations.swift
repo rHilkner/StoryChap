@@ -11,7 +11,7 @@ import UIKit
 extension MenuViewController {
     /// Function resposible for doing the expantion of menu collection view
     func animateExpandMenuCollectionVew() {
-        self.menuCollectionHeightConstraint.constant += 900
+        self.menuCollectionHeightConstraint.constant += 220
         UIView.animate(withDuration: 0.5) {
             self.view.layoutIfNeeded()
         }
@@ -19,7 +19,7 @@ extension MenuViewController {
     
     /// Function resposible for doing the expantion of menu collection view
     func animateReduceMenuCollectionVew() {
-        self.menuCollectionHeightConstraint.constant -= 900
+        self.menuCollectionHeightConstraint.constant -= 220
         UIView.animate(withDuration: 0.5) {
             self.view.layoutIfNeeded()
         }
