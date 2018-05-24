@@ -185,6 +185,17 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		C7A2B5D720B76526000F4751 /* MenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C6139AFA20A9D5EA00B168B7 /* MenuViewController.swift */,
+				C7B562C720B4327000217907 /* MenuViewController+CollectionView.swift */,
+				C7B562C920B435F100217907 /* MenuController+FocusGuide.swift */,
+				C7B562CB20B4391200217907 /* MenuViewController+Animations.swift */,
+			);
+			path = MenuViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -413,7 +424,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HMM2SSNKR5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = StoryChap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -434,7 +445,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HMM2SSNKR5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = StoryChap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
