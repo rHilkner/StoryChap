@@ -142,7 +142,10 @@
 		C6139B1720A9FF2100B168B7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C7B562C620B4325800217907 /* MenuViewController */,
+				C6139AFA20A9D5EA00B168B7 /* MenuViewController.swift */,
+				C7B562C720B4327000217907 /* MenuViewController+CollectionView.swift */,
+				C7B562C920B435F100217907 /* MenuController+FocusGuide.swift */,
+				C7B562CB20B4391200217907 /* MenuViewController+Animations.swift */,
 				C6139B2520AB2B0400B168B7 /* StoryDetailsViewController.swift */,
 				C667A1CE20AC692B003D2087 /* GameViewController.swift */,
 			);
@@ -171,17 +174,6 @@
 				C6139B1F20AB162D00B168B7 /* MenuServices.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		C7B562C620B4325800217907 /* MenuViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C6139AFA20A9D5EA00B168B7 /* MenuViewController.swift */,
-				C7B562C720B4327000217907 /* MenuViewController+CollectionView.swift */,
-				C7B562C920B435F100217907 /* MenuController+FocusGuide.swift */,
-				C7B562CB20B4391200217907 /* MenuViewController+Animations.swift */,
-			);
-			path = MenuViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
