@@ -2,10 +2,12 @@
   "images" : [
     {
       "idiom" : "tv",
+      "filename" : "Xtories-darkRed.png",
       "scale" : "1x"
     },
     {
       "idiom" : "tv",
+      "filename" : "Xtories-darkRed@2x.png",
       "scale" : "2x"
     }
   ],

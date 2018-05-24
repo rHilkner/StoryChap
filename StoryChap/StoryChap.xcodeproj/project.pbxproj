@@ -28,6 +28,10 @@
 		C667A1CF20AC692B003D2087 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C667A1CE20AC692B003D2087 /* GameViewController.swift */; };
 		C667A1D120AC69A0003D2087 /* SegueIds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C667A1D020AC69A0003D2087 /* SegueIds.swift */; };
 		C667A1D320AC87A8003D2087 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C667A1D220AC87A8003D2087 /* Scene.swift */; };
+		C779A48820B32D1D00F7F6C3 /* mondark.json in Resources */ = {isa = PBXBuildFile; fileRef = C779A48720B32D1D00F7F6C3 /* mondark.json */; };
+		C7B562C820B4327000217907 /* MenuViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B562C720B4327000217907 /* MenuViewController+CollectionView.swift */; };
+		C7B562CA20B435F100217907 /* MenuController+FocusGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B562C920B435F100217907 /* MenuController+FocusGuide.swift */; };
+		C7B562CC20B4391200217907 /* MenuViewController+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B562CB20B4391200217907 /* MenuViewController+Animations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,10 @@
 		C667A1CE20AC692B003D2087 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		C667A1D020AC69A0003D2087 /* SegueIds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueIds.swift; sourceTree = "<group>"; };
 		C667A1D220AC87A8003D2087 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		C779A48720B32D1D00F7F6C3 /* mondark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = mondark.json; path = StoryChap/mondark.json; sourceTree = SOURCE_ROOT; };
+		C7B562C720B4327000217907 /* MenuViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		C7B562C920B435F100217907 /* MenuController+FocusGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuController+FocusGuide.swift"; sourceTree = "<group>"; };
+		C7B562CB20B4391200217907 /* MenuViewController+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+Animations.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +122,7 @@
 			children = (
 				C6139B0720A9E2B200B168B7 /* Cells */,
 				C6139AFC20A9D5EA00B168B7 /* Main.storyboard */,
+				C779A48720B32D1D00F7F6C3 /* mondark.json */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -238,6 +247,7 @@
 				6469B4DD20B32A1400123781 /* mondark.json in Resources */,
 				C6139B0020A9D5ED00B168B7 /* Assets.xcassets in Resources */,
 				C6139AFE20A9D5EA00B168B7 /* Main.storyboard in Resources */,
+				C779A48820B32D1D00F7F6C3 /* mondark.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,11 +269,13 @@
 				C6139B1220A9E56000B168B7 /* Character.swift in Sources */,
 				64AAE60620B4597E0050EA83 /* GameViewController+Animation.swift in Sources */,
 				C6139AF920A9D5EA00B168B7 /* AppDelegate.swift in Sources */,
+				C7B562CA20B435F100217907 /* MenuController+FocusGuide.swift in Sources */,
 				C6139B1020A9E54C00B168B7 /* Story.swift in Sources */,
 				C6139B2020AB162D00B168B7 /* MenuServices.swift in Sources */,
 				C6139B2420AB2A5600B168B7 /* ViewControllerFactory.swift in Sources */,
 				C6139B1620A9E57200B168B7 /* Game.swift in Sources */,
 				C6139B2620AB2B0400B168B7 /* StoryDetailsViewController.swift in Sources */,
+				C7B562CC20B4391200217907 /* MenuViewController+Animations.swift in Sources */,
 				C6139B2220AB168A00B168B7 /* StoryPersistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

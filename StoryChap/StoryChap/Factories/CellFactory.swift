@@ -18,9 +18,17 @@ class CellFactory {
     static func storyCell(collectionView: UICollectionView, indexPath: IndexPath, story: Story) -> StoryCollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellType.movieCell.rawValue, for: indexPath) as! StoryCollectionViewCell
 
-        cell.storyTitleLabel.text = story.title
         cell.thumbnailImage.image = UIImage(named: story.thumbnailImageName)
 
+        return cell
+    }
+    
+    /// Returns story cell for given story
+    static func favoriteStoryCell(collectionView: UICollectionView, indexPath: IndexPath, story: Story) -> StoryCollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellType.movieCell.rawValue, for: indexPath) as! StoryCollectionViewCell
+        
+        cell.thumbnailImage.image = UIImage(named: story.thumbnailImageName)
+        
         return cell
     }
 }

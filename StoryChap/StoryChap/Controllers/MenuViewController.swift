@@ -9,70 +9,49 @@
 import UIKit
 
 class MenuViewController: UIViewController {
-
+    //Scroll View
+    @IBOutlet weak var menuScrollView: UIScrollView!
+    //Constraints
+    @IBOutlet weak var menuCollectionHeightConstraint: NSLayoutConstraint!
+    //Collection's
+    @IBOutlet weak var favoriteCollectionView: UICollectionView!
     @IBOutlet weak var collectionView: UICollectionView!
+    //Xtories to collection
     var stories: [Story] = []
-
+    var favoriteStories: [Story] = []
+    //Flags
+    var firstScroll = true
+    ///initial of the controller
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.stories = MenuServices.allStories()
-
-        self.collectionView.dataSource = self
-        self.collectionView.delegate = self
+        self.favoriteStories = MenuServices.allStories()
         self.collectionView.reloadData()
     }
-
-}
-
-extension MenuViewController: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: SegueIds.storyDetails.rawValue, sender: self.stories[0])
-    }
-}
-
-extension MenuViewController: UICollectionViewDataSource {
-
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-
-        return self.stories.count
-    }
-
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = CellFactory.storyCell(collectionView: collectionView, indexPath: indexPath, story: self.stories[0])
-
-        return cell
-    }
-
-}
-
-// Dealing with segues
-extension MenuViewController {
+    ///Before performing a segue this function is called
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+        
         switch segue.identifier {
-
+            
         case SegueIds.storyDetails.rawValue:
             guard let story = sender as? Story else {
                 print("-> WARNING: Story sender is nil")
                 return
             }
-
+            
             guard let segueDestination = segue.destination as? StoryDetailsViewController else {
                 print("-> WARNING: Segue destination is incorrect")
                 return
             }
-
+            
             // Setting story of next view controller
             segueDestination.story = story
-
+            
         default:
             break
         }
     }
+
 }
 
