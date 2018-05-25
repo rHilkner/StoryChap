@@ -12,7 +12,6 @@
 		64AAE60320B447900050EA83 /* Champagne & Limousines.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AAE60220B447870050EA83 /* Champagne & Limousines.ttf */; };
 		64AAE60620B4597E0050EA83 /* GameViewController+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AAE60520B4597E0050EA83 /* GameViewController+Animation.swift */; };
 		C6139AF920A9D5EA00B168B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6139AF820A9D5EA00B168B7 /* AppDelegate.swift */; };
-		C6139AFB20A9D5EA00B168B7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6139AFA20A9D5EA00B168B7 /* MenuViewController.swift */; };
 		C6139AFE20A9D5EA00B168B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6139AFC20A9D5EA00B168B7 /* Main.storyboard */; };
 		C6139B0020A9D5ED00B168B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6139AFF20A9D5ED00B168B7 /* Assets.xcassets */; };
 		C6139B0A20A9E3D500B168B7 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6139B0920A9E3D500B168B7 /* StoryCollectionViewCell.swift */; };
@@ -29,9 +28,6 @@
 		C667A1D120AC69A0003D2087 /* SegueIds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C667A1D020AC69A0003D2087 /* SegueIds.swift */; };
 		C667A1D320AC87A8003D2087 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C667A1D220AC87A8003D2087 /* Scene.swift */; };
 		C779A48820B32D1D00F7F6C3 /* mondark.json in Resources */ = {isa = PBXBuildFile; fileRef = C779A48720B32D1D00F7F6C3 /* mondark.json */; };
-		C7B562C820B4327000217907 /* MenuViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B562C720B4327000217907 /* MenuViewController+CollectionView.swift */; };
-		C7B562CA20B435F100217907 /* MenuController+FocusGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B562C920B435F100217907 /* MenuController+FocusGuide.swift */; };
-		C7B562CC20B4391200217907 /* MenuViewController+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B562CB20B4391200217907 /* MenuViewController+Animations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +37,6 @@
 		64AAE60520B4597E0050EA83 /* GameViewController+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameViewController+Animation.swift"; sourceTree = "<group>"; };
 		C6139AF520A9D5EA00B168B7 /* StoryChap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryChap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6139AF820A9D5EA00B168B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C6139AFA20A9D5EA00B168B7 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		C6139AFD20A9D5EA00B168B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6139AFF20A9D5ED00B168B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6139B0120A9D5ED00B168B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,9 +54,6 @@
 		C667A1D020AC69A0003D2087 /* SegueIds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueIds.swift; sourceTree = "<group>"; };
 		C667A1D220AC87A8003D2087 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		C779A48720B32D1D00F7F6C3 /* mondark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = mondark.json; path = StoryChap/mondark.json; sourceTree = SOURCE_ROOT; };
-		C7B562C720B4327000217907 /* MenuViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+CollectionView.swift"; sourceTree = "<group>"; };
-		C7B562C920B435F100217907 /* MenuController+FocusGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuController+FocusGuide.swift"; sourceTree = "<group>"; };
-		C7B562CB20B4391200217907 /* MenuViewController+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+Animations.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +144,6 @@
 		C6139B1720A9FF2100B168B7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C6139AFA20A9D5EA00B168B7 /* MenuViewController.swift */,
 				C667A1CE20AC692B003D2087 /* GameViewController.swift */,
 				64AAE60520B4597E0050EA83 /* GameViewController+Animation.swift */,
 				C6139B2520AB2B0400B168B7 /* StoryDetailsViewController.swift */,
@@ -183,17 +174,6 @@
 				C6139B1F20AB162D00B168B7 /* MenuServices.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		C7A2B5D720B76526000F4751 /* MenuViewController */ = {
-			isa = PBXGroup;
-			children = (
-				C6139AFA20A9D5EA00B168B7 /* MenuViewController.swift */,
-				C7B562C720B4327000217907 /* MenuViewController+CollectionView.swift */,
-				C7B562C920B435F100217907 /* MenuController+FocusGuide.swift */,
-				C7B562CB20B4391200217907 /* MenuViewController+Animations.swift */,
-			);
-			path = MenuViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +251,6 @@
 			files = (
 				C667A1CF20AC692B003D2087 /* GameViewController.swift in Sources */,
 				C6139B0D20A9E4A200B168B7 /* CellFactory.swift in Sources */,
-				C6139AFB20A9D5EA00B168B7 /* MenuViewController.swift in Sources */,
 				C667A1D320AC87A8003D2087 /* Scene.swift in Sources */,
 				C667A1D120AC69A0003D2087 /* SegueIds.swift in Sources */,
 				C6139B1420A9E56B00B168B7 /* Event.swift in Sources */,
@@ -280,13 +259,11 @@
 				C6139B1220A9E56000B168B7 /* Character.swift in Sources */,
 				64AAE60620B4597E0050EA83 /* GameViewController+Animation.swift in Sources */,
 				C6139AF920A9D5EA00B168B7 /* AppDelegate.swift in Sources */,
-				C7B562CA20B435F100217907 /* MenuController+FocusGuide.swift in Sources */,
 				C6139B1020A9E54C00B168B7 /* Story.swift in Sources */,
 				C6139B2020AB162D00B168B7 /* MenuServices.swift in Sources */,
 				C6139B2420AB2A5600B168B7 /* ViewControllerFactory.swift in Sources */,
 				C6139B1620A9E57200B168B7 /* Game.swift in Sources */,
 				C6139B2620AB2B0400B168B7 /* StoryDetailsViewController.swift in Sources */,
-				C7B562CC20B4391200217907 /* MenuViewController+Animations.swift in Sources */,
 				C6139B2220AB168A00B168B7 /* StoryPersistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
