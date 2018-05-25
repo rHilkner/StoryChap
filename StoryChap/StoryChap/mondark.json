@@ -13,1015 +13,1116 @@
   "events": [
     {
       "id": "1",
-      "optionText": "Text",
+      "optionText": "primaryText",
       "scenes": [
         {
-          "text": "Chapter 1 - Always",
+          "backgroundSoundName": "futuristic",
+          "primaryText": "Chapter 1 - Always",
           "imageName": "chapter1.1",
-          "x": 603,
-          "y": 497,
-          "width": 714,
-          "height": 71,
-          "color": "255,255,255,255",
-          "fontName": "Champagne&Limousines",
-          "fontSize": 70,
-          "transitionTimeIn": 2,
-          "transitionTimeOut": 2
+          "primaryX": 603,
+          "primaryY": 497,
+          "primaryWidth": 714,
+          "primaryHeight": 71,
+          "primaryColor": "255,255,255,255",
+          "primaryFontName": "Champagne&Limousines",
+          "primaryFontSize": 70,
+          "primaryTransitionTimeIn": 2,
+          "primaryTransitionTimeOut": 2,
+          "primaryHasBorder": false
         },
         {
-          "text": "Life has changed in the last 100 years, most people can’t remember their youth, but they all remember the first time they heard that voice.",
+          "primaryText": "Life has changed in the last 100 years, most people can’t remember their youth, but they all remember the first time they heard that voice.",
           "imageName": "chapter1.1",
-          "x": 350,
-          "y": 350,
-          "width": 1274,
-          "height": 436,
-          "color": "255,255,255,255",
-          "fontName": "Champagne&Limousines",
-          "fontSize": 70,
-          "transitionTimeIn": 2,
-          "transitionTimeOut": 2
+          "primaryX": 350,
+          "primaryY": 350,
+          "primaryWidth": 1274,
+          "primaryHeight": 436,
+          "primaryColor": "255,255,255,255",
+          "primaryFontName": "Champagne&Limousines",
+          "primaryFontSize": 70,
+          "primaryTransitionTimeIn": 2,
+          "primaryTransitionTimeOut": 2
         },
         {
-          "text": "Greetings, I am MONDARK",
+          "primaryText": "Greetings, I am MONDARK",
           "imageName": "chapter1.1",
-          "x": 603,
-          "y": 497,
-          "width": 714,
-          "height": 71,
-          "color": "255,255,255,255",
-          "fontName": "Champagne&LimousinesItalic",
-          "fontSize": 70,
-          "transitionTimeIn": 2,
-          "transitionTimeOut": 2
+          "primaryX": 603,
+          "primaryY": 497,
+          "primaryWidth": 714,
+          "primaryHeight": 71,
+          "primaryColor": "255,255,255,255",
+          "primaryFontName": "Champagne&Limousines-Italic",
+          "primaryFontSize": 70,
+          "primaryTransitionTimeIn": 2,
+          "primaryTransitionTimeOut": 2
         },
         {
-          "text": "I’m here to aid you in your life experience",
+          "primaryText": "I’m here to aid you in your life experience",
           "imageName": "chapter1.1",
-          "x": 1075,
-          "y": 259,
-          "width": 666,
-          "height": 148
+          "primaryX": 1075,
+          "primaryY": 259,
+          "primaryWidth": 666,
+          "primaryHeight": 148
         },
         {
-          "text": "it may seem confusing right now, but don’t worry, soon we’ll be best mind friends!",
+          "primaryText": "it may seem confusing right now, but don’t worry, soon we’ll be best mind friends!",
           "imageName": "chapter1.1",
-          "x": 225,
-          "y": 618,
-          "width": 687,
-          "height": 310
+          "primaryX": 225,
+          "primaryY": 618,
+          "primaryWidth": 687,
+          "primaryHeight": 310
         },
         {
-          "text": "You have nothing to fear!",
+          "primaryText": "You have nothing to fear!",
           "imageName": "chapter1.1",
-          "x": 527,
-          "y": 363,
-          "width": 866,
-          "height": 85
+          "primaryX": 527,
+          "primaryY": 363,
+          "primaryWidth": 866,
+          "primaryHeight": 85
         },
         {
-          "text": "from now on you will never feel alone again.",
-          "imageName": "chapter1.1",
-          "x": 617,
-          "y": 505,
-          "width": 687,
-          "height": 143
+          "secondaryText": "from now on you will never feel alone again.",
+          "secondaryX": 617,
+          "secondaryY": 505,
+          "secondaryWidth": 687,
+          "secondaryHeight": 143,
+          "secondaryColor": "255,255,255,255",
+          "secondaryFontName": "Champagne&Limousines-Italic",
+          "secondaryFontSize": 70,
+          "secondaryTransitionTimeIn": 0.5,
+          "secondaryTransitionTimeOut": 0.5
         },
         {
-          "text": "Welcome to the hivemind",
+          "primaryText": "Welcome to the hivemind",
           "imageName": "chapter1.2",
-          "x": 311,
-          "y": 457,
-          "width": 1299,
-          "height": 124,
-          "color": "255,255,255,255",
-          "fontName": "Champagne & Limousines",
-          "fontSize": 120,
-          "transitionTimeIn": 1.5
+          "primaryX": 311,
+          "primaryY": 457,
+          "primaryWidth": 1299,
+          "primaryHeight": 124,
+          "primaryColor": "255,255,255,255",
+          "primaryFontName": "Champagne & Limousines",
+          "primaryFontSize": 120,
+          "primaryTransitionTimeIn": 1.5
         },
         {
-          "text": "For some it happened very early, but for most it happened during teenage years",
+          "primaryText": "For some it happened very early, but for most it happened during teenage years",
           "imageName": "chapter1.3",
-          "x": 67,
-          "y": 59,
-          "width": 976,
-          "height": 450,
-          "fontName": "Champagne & Limousines",
-          "fontSize": 100
+          "primaryX": 785,
+          "primaryY": 57,
+          "primaryWidth": 980,
+          "primaryHeight": 483,
+          "primaryFontName": "Champagne & Limousines",
+          "primaryFontSize": 100,
+          "primaryHasBorder": true,
+          "primaryTransitionTimeIn": 0.5,
+          "primaryTransitionTimeOut": 0.5
         },
         {
-          "text": "it wasn’t a voice we heard close to us",
+          "primaryText": "it wasn’t a voice we heard close to us",
           "imageName": "chapter1.3",
-          "x": 481,
-          "y": 59,
-          "width": 1421,
-          "height": 99
+          "primaryX": 449,
+          "primaryY": 61,
+          "primaryWidth": 1461,
+          "primaryHeight": 178
         },
         {
-          "text": "instead it was inside our own minds",
+          "secondaryText": "instead it was inside our \nown minds",
           "imageName": "chapter1.3",
-          "x": 754,
-          "y": 142,
-          "width": 976,
-          "height": 212
+          "secondaryX": 753,
+          "secondaryY": 280,
+          "secondaryWidth": 976,
+          "secondaryHeight": 217,
+          "secondaryFontName": "Champagne & Limousines",
+          "secondaryFontSize": 100,
+          "secondaryHasBorder": true,
+          "secondaryTransitionTimeIn": 0.5,
+          "secondaryTransitionTimeOut": 0.5
         },
         {
-          "text": "in the minds of everyone, our friends, our families.",
+          "primaryText": "in the minds of everyone, \nour friends, our families.",
           "imageName": "chapter1.3",
-          "x": 134,
-          "y": 579,
-          "width": 978,
-          "height": 212
+          "primaryX": 784,
+          "primaryY": 159,
+          "primaryWidth": 1003,
+          "primaryHeight": 245
         },
         {
-          "text": "MONDARK was the window that connected us all together like nothing before",
+          "primaryText": "MONDARK was the window that connected us all together like nothing before",
           "imageName": "chapter1.4",
-          "x": 92,
-          "y": 185,
-          "width": 1214,
-          "height": 360,
-          "transitionTimeIn": 1.5
+          "primaryX": 92,
+          "primaryY": 185,
+          "primaryWidth": 1261,
+          "primaryHeight": 360,
+          "primaryTransitionTimeIn": 1.5
         },
         {
-          "text": "it was wonderful.",
-          "imageName": "chapter1.4",
-          "x": 287,
-          "y": 428,
-          "width": 825,
-          "height": 208,
-          "transitionTimeOut": 0.75,
-          "transitionTimeIn": 1.5
+          "secondaryText": "it was wonderful.",
+          "imageName": "chapter1.3",
+          "secondaryX": 92,
+          "secondaryY": 585,
+          "secondaryWidth": 1261,
+          "secondaryHeight": 117,
+          "secondaryFontName": "Champagne & Limousines",
+          "secondaryFontSize": 100,
+          "secondaryHasBorder": true,
+          "secondaryTransitionTimeIn": 0.5,
+          "secondaryTransitionTimeOut": 0.5
         },
         {
-          "text": "I don’t think so anymore.",
+          "primaryText": "I don’t think so anymore.",
           "imageName": "chapter1.5",
-          "x": 941,
-          "y": 400,
-          "width": 926,
-          "height": 99
+          "primaryX": 901,
+          "primaryY": 400,
+          "primaryWidth": 966,
+          "primaryHeight": 117,
+          "primaryTransitionTimeIn": 0.5,
+          "primaryTransitionTimeOut": 0.5
         },
         {
-          "text": "A scarlet light shines upon the cup in front of me, sitting on top of the bar. Many colored lights illuminate the small club all around,",
+          "primaryText": "A scarlet light shines upon the cup \nin front of me, sitting on top of the \nbar. Many colored lights illuminate \nthe small club all around,",
           "imageName": "chapter1.6",
-          "x": 56,
-          "y": 107,
-          "width": 1274,
-          "height": 436
+          "primaryX": 43,
+          "primaryY": 92,
+          "primaryWidth": 1359,
+          "primaryHeight": 448
         },
         {
-          "text": "a few patrons sit among the dirty tables and barely hold any conversation, a soothing low blues is being played by a band in the back, the mood is absolutely dark. I love it",
+          "primaryText": "a few patrons sit among the dirty tables \nand barely hold any conversation, a \nsoothing low blues is being played by \na band in the back, the mood is \nabsolutely dark.",
           "imageName": "chapter1.6",
-          "x": 56,
-          "y": 107,
-          "width": 1484,
-          "height": 546
+          "primaryX": 34,
+          "primaryY": 96,
+          "primaryWidth": 1524,
+          "primaryHeight": 546
         },
         {
-          "text": "Being alone here, listening only to my thoughts and the songs, staring blankly at the cup, the bar and sometimes at the bartender’s weird moustache.",
+          "secondaryText": "I love it.",
+          "imageName": "chapter1.3",
+          "secondaryX": 589,
+          "secondaryY": 738,
+          "secondaryWidth": 414,
+          "secondaryHeight": 117,
+          "secondaryFontName": "Champagne & Limousines",
+          "secondaryFontSize": 100,
+          "secondaryTransitionTimeIn": 0.5,
+          "secondaryTransitionTimeOut": 0.5
+        },
+        {
+          "primaryText": "Being alone here, listening only to my \nthoughts and the songs, staring blankly \nat the cup, the bar and sometimes at \nthe bartender’s weird moustache.",
           "imageName": "chapter1.6",
-          "x": 56,
-          "y": 107,
-          "width": 1484,
-          "height": 436
+          "primaryX": 56,
+          "primaryY": 95,
+          "primaryWidth": 1484,
+          "primaryHeight": 433
         },
         {
-          "text": "Joel is a friendly big guy, long dark hair combed back, and of course the long equally dark and thick moustache that ends ia a thin twirl, its a funny sight.",
+          "primaryText": "Joel is a friendly big guy, long dark hair \ncombed back, and of course the long \nequally dark and thick moustache that \nends in a thin twirl, its a funny sight.",
           "imageName": "chapter1.6",
-          "x": 56,
-          "y": 107,
-          "width": 1484,
-          "height": 436
+          "primaryX": 56,
+          "primaryY": 95,
+          "primaryWidth": 1484,
+          "primaryHeight": 433
         },
         {
-          "text": "I take a look at the clock up at the wall, why do they have such a old thing anyway?",
+          "primaryText": "I take a look at the clock up at the \nwall, why do they have such an old \nthing anyway?",
           "imageName": "chapter1.6",
-          "x": 56,
-          "y": 107,
-          "width": 1484,
-          "height": 317
+          "primaryX": 69,
+          "primaryY": 95,
+          "primaryWidth": 1484,
+          "primaryHeight": 345
         },
         {
-          "text": " I down my drink, it burns as is passes through my throat, standing up and with a nod to Joel I leave the club.",
+          "secondaryText": "Most people nowadays don’t even \nknow how to read it, I take quite a bit \nof time myself. 5 o’clock,",
           "imageName": "chapter1.6",
-          "x": 56,
-          "y": 107,
-          "width": 1401,
-          "height": 317
+          "secondaryX": 69,
+          "secondaryY": 511,
+          "secondaryWidth": 1484,
+          "secondaryHeight": 345,
+          "secondaryTransitionTimeIn": 0.5,
+          "secondaryTransitionTimeOut": 0.5
         },
         {
-          "text": "Exiting through the metal door that lead to a small passage on the side of the old Adrian Bridge,",
+          "primaryText": " I down my drink, it burns as is passes \nthrough my throat, standing up and \nwith a nod to Joel I leave the club.",
+          "imageName": "chapter1.6",
+          "primaryX": 69,
+          "primaryY": 95,
+          "primaryWidth": 1484,
+          "primaryHeight": 345
+        },
+        {
+          "primaryText": "Exiting through the metal door that lead to a small passage on the side of the old Adrian Bridge,",
           "imageName": "chapter1.7",
-          "x": 107,
-          "y": 92,
-          "width": 1167,
-          "height": 436
+          "primaryX": 107,
+          "primaryY": 92,
+          "primaryWidth": 1167,
+          "primaryHeight": 436
         },
         {
-          "text": "a cold breeze hits me face causing a bit of a shiver, New Rooftown is always cold this time of year and …",
+          "primaryText": "a cold breeze hits me face causing a bit of a shiver, New Rooftown is always cold this time of year and …",
           "imageName": "chapter1.7",
-          "x": 753,
-          "y": 637,
-          "width": 1167,
-          "height": 436
+          "primaryX": 703,
+          "primaryY": 601,
+          "primaryWidth": 1167,
+          "primaryHeight": 419
         },
         {
-          "text": "Friend, you disappeared from me again, are you alright?",
+          "primaryText": "Friend, you disappeared from \nme again, are you alright?",
           "imageName": "chapter1.7",
-          "x": 742,
-          "y": 113,
-          "width": 1167,
-          "height": 258
+          "primaryX": 722,
+          "primaryY": 169,
+          "primaryWidth": 1187,
+          "primaryHeight": 258,
+          "primaryFontName": "Champagne&Limousines-Italic",
+          "primaryFontSize": 100
         },
         {
-          "text": "I’m alright MONDARK.",
+          "primaryText": "I’m alright MONDARK.",
           "imageName": "chapter1.7",
-          "x": 0,
-          "y": 737,
-          "width": 1167,
-          "height": 113
+          "primaryX": 104,
+          "primaryY": 701,
+          "primaryWidth": 939,
+          "primaryHeight": 123,
+          "primaryFontName": "Champagne&Limousines",
+          "primaryFontSize": 100
         },
         {
-          "text": "You always disappear on me around this area, what have you been doing?",
+          "primaryText": "You always disappear on me around this area, what have you been doing?",
           "imageName": "chapter1.7",
-          "x": 742,
-          "y": 133,
-          "width": 1167,
-          "height": 317
+          "primaryX": 742,
+          "primaryY": 133,
+          "primaryWidth": 1167,
+          "primaryHeight": 345,
+          "primaryFontName": "Champagne&Limousines-Italic",
+          "primaryFontSize": 100
         },
         {
-          "text": "Nothing you need to worry about.",
+          "primaryText": "Nothing you need to worry about.",
           "imageName": "chapter1.7",
-          "x": 0,
-          "y": 737,
-          "width": 1167,
-          "height": 238
+          "primaryX": 140,
+          "primaryY": 737,
+          "primaryWidth": 1027,
+          "primaryHeight": 238,
+          "primaryFontName": "Champagne&Limousines",
+          "primaryFontSize": 100
         },
         {
-          "text": "As I’m waling I notice a couple walking down the street, the seem distracted with each …",
+          "primaryText": "As I’m walking I notice a couple walking down the street, the seem distracted with each…",
           "imageName": "chapter1.7",
-          "x": 105,
-          "y": 197,
-          "width": 1167,
-          "height": 317
+          "primaryX": 85,
+          "primaryY": 181,
+          "primaryWidth": 1215,
+          "primaryHeight": 345
         },
         {
-          "text": "You missed you appointment to Dr. Willson",
+          "primaryText": "You missed you appointment to Dr. Willson",
           "imageName": "chapter1.7",
-          "x": 742,
-          "y": 133,
-          "width": 1167,
-          "height": 238
+          "primaryX": 742,
+          "primaryY": 133,
+          "primaryWidth": 1167,
+          "primaryHeight": 238,
+          "primaryFontName": "Champagne&Limousines-Italic",
+          "primaryFontSize": 100
         },
         {
-          "text": "I don’t want to talk to him",
+          "primaryText": "I don’t want to talk to him",
           "imageName": "chapter1.7",
-          "x": 0,
-          "y": 737,
-          "width": 1167,
-          "height": 99
+          "primaryX": 140,
+          "primaryY": 737,
+          "primaryWidth": 1027,
+          "primaryHeight": 117,
+          "primaryFontName": "Champagne&Limousines",
+          "primaryFontSize": 100,
+          "secondaryText": "I hate that doctor.",
+          "imageName": "chapter1.6",
+          "secondaryX": 1113,
+          "secondaryY": 910,
+          "secondaryWidth": 746,
+          "secondaryHeight": 117,
+          "secondaryHasBorder": false,
+          "secondaryTransitionTimeIn": 0.5,
+          "secondaryTransitionTimeOut": 0.5
         },
         {
-          "text": "The couple ahead seems to notice me, a man and a woman, both around thirty and well off,",
+          "primaryText": "The couple ahead seems to notice me, a man and a woman, both around thirty and well off,",
           "imageName": "chapter1.7",
-          "x": 68,
-          "y": 89,
-          "width": 1167,
-          "height": 436
+          "primaryX": 68,
+          "primaryY": 89,
+          "primaryWidth": 1167,
+          "primaryHeight": 436,
+          "secondaryText": "their eyes grow wide and scared as they stare at my,",
+          "imageName": "chapter1.6",
+          "secondaryX": 68,
+          "secondaryY": 647,
+          "secondaryWidth": 1167,
+          "secondaryHeight": 238,
+          "secondaryHasBorder": true,
+          "secondaryTransitionTimeIn": 0.5,
+          "secondaryTransitionTimeOut": 0.5
         },
         {
-          "text": "their eyes grow wide and scared as they stare at my,",
+          "primaryText": "soon they are both crossing the street in a hurry, a hoverer, seems like one of those new models, almost hits then in the head as the driver dodges to the side.",
           "imageName": "chapter1.7",
-          "x": 68,
-          "y": 647,
-          "width": 1167,
-          "height": 238
+          "primaryX": 83,
+          "primaryY": 110,
+          "primaryWidth": 1284,
+          "primaryHeight": 546
         },
         {
-          "text": "soon they are both crossing the street in a hurry, a hoverer, seems like one of those new models, almost hits then in the head as the driver dodges to the side.",
+          "primaryText": "…",
           "imageName": "chapter1.7",
-          "x": 83,
-          "y": 110,
-          "width": 1284,
-          "height": 546
+          "primaryX": 1162,
+          "primaryY": 41,
+          "primaryWidth": 747,
+          "primaryHeight": 209,
+          "primaryFontName": "Champagne&Limousines-Italic",
+          "primaryFontSize": 210
         },
         {
-          "text": "…",
+          "primaryText": "You know, this situation is not going to change until you open up a little",
           "imageName": "chapter1.7",
-          "x": 1162,
-          "y": 41,
-          "width": 747,
-          "height": 209
+          "primaryX": 753,
+          "primaryY": 110,
+          "primaryWidth": 1167,
+          "primaryHeight": 399,
+          "primaryFontName": "Champagne&Limousines-Italic",
+          "primaryFontSize": 100
         },
         {
-          "text": "You know, this situation is not going to change until you open up a little",
+          "primaryText": "I feel angry, frustrated, I did’t \nmean for things to be like this.",
           "imageName": "chapter1.7",
-          "x": 753,
-          "y": 110,
-          "width": 1167,
-          "height": 317
+          "primaryX": 49,
+          "primaryY": 672,
+          "primaryWidth": 1155,
+          "primaryHeight": 258,
+          "primaryFontName": "Champagne&Limousines",
+          "primaryFontSize": 100
         },
         {
-          "text": "I feel angry, frustrated, I did’t mean for things to be like this.",
+          "primaryText": "Come on now, you don’t have to feel like that, I’m here for you!",
           "imageName": "chapter1.7",
-          "x": 0,
-          "y": 737,
-          "width": 1167,
-          "height": 238
+          "primaryX": 601,
+          "primaryY": 108,
+          "primaryWidth": 1266,
+          "primaryHeight": 258,
+          "primaryFontName": "Champagne&Limousines-Italic",
+          "primaryFontSize": 100,
+          "primaryHasBorder": true
         },
         {
-          "text": "Come on now, you don’t have to feel like that, I’m here for you!",
+          "primaryText": "Yeah, he always is.",
           "imageName": "chapter1.7",
-          "x": 753,
-          "y": 110,
-          "width": 1167,
-          "height": 238
+          "primaryX": 107,
+          "primaryY": 717,
+          "primaryWidth": 954,
+          "primaryHeight": 163,
+          "primaryFontName": "Champagne&Limousines",
+          "primaryFontSize": 100,
+          "primaryHasBorder": false
         },
         {
-          "text": "Yeah, he always is.",
-          "imageName": "chapter1.7",
-          "x": 0,
-          "y": 737,
-          "width": 1167,
-          "height": 99
-        },
-        {
-          "text": "With shivers from the cold I once again entered the Blues Under the Bridge Pub, the unique atmosphere instantly improved my mood.",
+          "primaryText": "With shivers from the cold I once again entered the Blues Under the Bridge Pub, the unique atmosphere instantly improved my mood.",
           "imageName": "chapter1.8",
-          "x": 40,
-          "y": 630,
-          "width": 1359,
-          "height": 416
+          "primaryX": 40,
+          "primaryY": 630,
+          "primaryWidth": 1359,
+          "primaryHeight": 416,
+          "primaryHasBorder": true
         },
         {
-          "text": "There’s something special about this place that can’t be had anywhere else, its sincere, authentic.",
+          "primaryText": "There’s something special about this place that can’t be had anywhere else, its sincere, authentic.",
           "imageName": "chapter1.8",
-          "x": 40,
-          "y": 713,
-          "width": 1359,
-          "height": 317
+          "primaryX": 40,
+          "primaryY": 713,
+          "primaryWidth": 1399,
+          "primaryHeight": 317
         },
         {
-          "text": "This time I’m not walking towards the bar, but to a table, where sit two figures whom I’m beginning to be very fond of.",
+          "primaryText": "This time I’m not walking towards the bar, but to a table, where sit two figures whom I’m beginning to be very fond of.",
           "imageName": "chapter1.8",
-          "x": 40,
-          "y": 622,
-          "width": 1359,
-          "height": 416
+          "primaryX": 40,
+          "primaryY": 622,
+          "primaryWidth": 1359,
+          "primaryHeight": 416
         },
         {
-          "text": "As I get close both their head turn to greet me with a smile that is as warm as the establishment, on the left is Jessy Jackson, JJ,",
+          "primaryText": "As I get close both their head turn to greet me with a smile that is as warm as the establishment, on the left is Jessy Jackson, JJ,",
           "imageName": "chapter1.8",
-          "x": 40,
-          "y": 622,
-          "width": 1359,
-          "height": 416
+          "primaryX": 40,
+          "primaryY": 622,
+          "primaryWidth": 1359,
+          "primaryHeight": 416
         },
         {
-          "text": "a tall woman with light brown hair and pale skin, its rare to find someone that cares so much about others like her, on the right is Leonard Martin, ",
+          "primaryText": "a tall woman with light brown hair and pale skin, its rare to find someone that cares so much about others like her, on the right is Leonard Martin, ",
           "imageName": "chapter1.8",
-          "x": 40,
-          "y": 622,
-          "width": 1359,
-          "height": 416
+          "primaryX": 40,
+          "primaryY": 622,
+          "primaryWidth": 1468,
+          "primaryHeight": 416
         },
         {
-          "text": "everyone calls him Right Side, he has short black hair, dark skin, a thin face and is a little scrawny, ",
+          "primaryText": "everyone calls him Right Side, he has short black hair, dark skin, a thin face and is a little scrawny, ",
           "imageName": "chapter1.8",
-          "x": 40,
-          "y": 710,
-          "width": 1428,
-          "height": 317
+          "primaryX": 40,
+          "primaryY": 710,
+          "primaryWidth": 1428,
+          "primaryHeight": 317
         },
         {
-          "text": "but his most notable feature is the metal cyber-arm he has where his right arm used to be,",
+          "primaryText": "but his most notable feature is the metal cyber-arm he has where his right arm used to be,",
           "imageName": "chapter1.8",
-          "x": 40,
-          "y": 710,
-          "width": 1428,
-          "height": 317
+          "primaryX": 40,
+          "primaryY": 710,
+          "primaryWidth": 1448,
+          "primaryHeight": 317
         },
         {
-          "text": "he is cocky from time to time, but for the most part he is a funny and quick on his feet friend. I take a sit beside them.",
+          "primaryText": "he is cocky from time to time, but for the most part he is a funny and quick on his feet friend.",
           "imageName": "chapter1.8",
-          "x": 40,
-          "y": 622,
-          "width": 1428,
-          "height": 416
+          "primaryX": 40,
+          "primaryY": 502,
+          "primaryWidth": 1428,
+          "primaryHeight": 337,
+          "secondaryText": "I take a sit beside them.",
+          "secondaryX": 960,
+          "secondaryY": 900,
+          "secondaryWidth": 930,
+          "secondaryHeight": 137,
+          "secondaryTransitionTimeIn": 0.5,
+          "secondaryTransitionTimeOut": 0.5
         },
         {
-          "text": "Hey, you don’t look so well, everything alright?",
+          "primaryText": "Hey, you don’t look so well, everything alright?",
           "imageName": "chapter1.8",
-          "x": 56,
-          "y": 107,
-          "width": 938,
-          "height": 217,
-          "color": "81,205,255,255"
+          "primaryX": 56,
+          "primaryY": 107,
+          "primaryWidth": 938,
+          "primaryHeight": 217,
+          "primaryColor": "81,205,255,255"
         },
         {
-          "text": "Been staying up late?",
+          "primaryText": "Been staying up late?",
           "imageName": "chapter1.8",
-          "x": 220,
-          "y": 801,
-          "width": 827,
-          "height": 99,
-          "color": "81,255,115,255"
+          "primaryX": 220,
+          "primaryY": 801,
+          "primaryWidth": 907,
+          "primaryHeight": 137,
+          "primaryColor": "81,255,115,255"
         },
         {
-          "text": "Nah, just the usual: work, stress and shitty people. You guys look awful as well",
+          "primaryText": "Nah, just the usual: work, stress and shitty people. You guys look awful as well",
           "imageName": "chapter1.8",
-          "x": 492,
-          "y": 78,
-          "width": 1428,
-          "height": 320,
-          "color": "255,255,255,255"
+          "primaryX": 492,
+          "primaryY": 78,
+          "primaryWidth": 1428,
+          "primaryHeight": 320,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "Yeah, but we’re the usual awful, yours seems special today",
+          "primaryText": "Yeah, but we’re the usual awful, yours seems special today",
           "imageName": "chapter1.8",
-          "x": 95,
-          "y": 820,
-          "width": 1196,
-          "height": 217,
-          "color": "81,255,115,255"
+          "primaryX": 95,
+          "primaryY": 800,
+          "primaryWidth": 1196,
+          "primaryHeight": 257,
+          "primaryColor": "81,255,115,255"
         },
         {
-          "text": "Just small things that are annoying me more than usual, I’ll be fine",
+          "primaryText": "Just small things that are annoying me more than usual, I’ll be fine",
           "imageName": "chapter1.8",
-          "x": 600,
-          "y": 78,
-          "width": 1300,
-          "height": 217,
-          "color": "255,255,255,255"
+          "primaryX": 600,
+          "primaryY": 78,
+          "primaryWidth": 1300,
+          "primaryHeight": 257,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "Well, take the time to relax a little, god knows we all need it",
+          "primaryText": "Well, take the time to relax a little, god knows we all need it",
           "imageName": "chapter1.8",
-          "x": 31,
-          "y": 72,
-          "width": 1134,
-          "height": 217,
-          "color": "81,205,255,255"
+          "primaryX": 31,
+          "primaryY": 72,
+          "primaryWidth": 1174,
+          "primaryHeight": 257,
+          "primaryColor": "81,205,255,255"
         },
         {
-          "text": "We take some time to sip our drinks and listen to the music as it picks up.",
+          "primaryText": "We take some time to sip our drinks and listen to the music as it picks up.",
           "imageName": "chapter1.8",
-          "x": 56,
-          "y": 716,
-          "width": 1428,
-          "height": 230,
-          "color": "255,255,255,255"
+          "primaryX": 56,
+          "primaryY": 716,
+          "primaryWidth": 1428,
+          "primaryHeight": 230,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "You guys heard about the stolen truck?",
+          "primaryText": "You guys heard about the stolen truck?",
           "imageName": "chapter1.8",
-          "x": 56,
-          "y": 767,
-          "width": 1162,
-          "height": 230,
-          "color": "81,255,115,255"
+          "primaryX": 56,
+          "primaryY": 767,
+          "primaryWidth": 1162,
+          "primaryHeight": 230,
+          "primaryColor": "81,255,115,255"
         },
         {
-          "text": "Stolen?! Nowadays? Who and how did they pull this off?",
+          "primaryText": "Stolen?! Nowadays? Who and how did they pull this off?",
           "imageName": "chapter1.8",
-          "x": 693,
-          "y": 107,
-          "width": 1162,
-          "height": 230,
-          "color": "255,255,255,255"
+          "primaryX": 693,
+          "primaryY": 107,
+          "primaryWidth": 1202,
+          "primaryHeight": 257,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "How did you even heard about that? … Are you sure it really happened?",
+          "primaryText": "How did you even heard about that? … Are you sure it really happened?",
           "imageName": "chapter1.8",
-          "x": 56,
-          "y": 73,
-          "width": 1274,
-          "height": 312,
-          "color": "81,205,255,255"
+          "primaryX": 56,
+          "primaryY": 73,
+          "primaryWidth": 1274,
+          "primaryHeight": 352,
+          "primaryColor": "81,205,255,255"
         },
         {
-          "text": "Oh, I sure am. I still talk to people from University, word gets around, you just gotta know where",
+          "primaryText": "Oh, I sure am. I still talk to people from University, word gets around, you just gotta know where",
           "imageName": "chapter1.8",
-          "x": 56,
-          "y": 713,
-          "width": 1274,
-          "height": 312,
-          "color": "81,255,115,255"
+          "primaryX": 56,
+          "primaryY": 673,
+          "primaryWidth": 1274,
+          "primaryHeight": 352,
+          "primaryColor": "81,255,115,255"
         },
         {
-          "text": "How’d get around MONDARK?",
+          "primaryText": "How’d get around MONDARK?",
           "imageName": "chapter1.8",
-          "x": 646,
-          "y": 107,
-          "width": 1274,
-          "height": 99,
-          "color": "255,255,255,255"
+          "primaryX": 606,
+          "primaryY": 107,
+          "primaryWidth": 1274,
+          "primaryHeight": 127,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "Joel has a jammer, he’s probably not the only one",
+          "primaryText": "Joel has a jammer, he’s probably not the only one",
           "imageName": "chapter1.8",
-          "x": 56,
-          "y": 794,
-          "width": 1274,
-          "height": 230,
-          "color": "81,255,115,255"
+          "primaryX": 56,
+          "primaryY": 794,
+          "primaryWidth": 1274,
+          "primaryHeight": 230,
+          "primaryColor": "81,255,115,255"
         },
         {
-          "text": "And who did it? What for?",
+          "primaryText": "And who did it? What for?",
           "imageName": "chapter1.8",
-          "x": 646,
-          "y": 123,
-          "width": 1274,
-          "height": 99,
-          "color": "255,255,255,255"
+          "primaryX": 726,
+          "primaryY": 123,
+          "primaryWidth": 1124,
+          "primaryHeight": 127,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "That I don’t know, but I’m looking into it",
+          "primaryText": "That I don’t know, but I’m looking into it",
           "imageName": "chapter1.8",
-          "x": 56,
-          "y": 794,
-          "width": 1274,
-          "height": 230,
-          "color": "81,255,115,255"
+          "primaryX": 56,
+          "primaryY": 794,
+          "primaryWidth": 1274,
+          "primaryHeight": 230,
+          "primaryColor": "81,255,115,255"
         },
         {
-          "text": "You really shouldn’t, we have enough problems already and you shouldn’t be looking for more",
+          "primaryText": "You really shouldn’t, we have\n enough problems already and \nyou shouldn’t be looking for more",
           "imageName": "chapter1.8",
-          "x": 56,
-          "y": 73,
-          "width": 1274,
-          "height": 312,
-          "color": "81,205,255,255"
+          "primaryX": 56,
+          "primaryY": 73,
+          "primaryWidth": 1314,
+          "primaryHeight": 352,
+          "primaryColor": "81,205,255,255"
         },
         {
-          "text": "Right Side pauses and leans back a bit, JJ looks nervous, for people like us talking about this could bring a whole lot of trouble.",
+          "primaryText": "Right Side pauses and leans back a \nbit, JJ looks nervous, for people like us \ntalking about this could bring a \nwhole lot of trouble.",
           "imageName": "chapter1.8",
-          "x": 80,
-          "y": 604,
-          "width": 1372,
-          "height": 431,
-          "color": "255,255,255,255"
+          "primaryX": 80,
+          "primaryY": 604,
+          "primaryWidth": 1462,
+          "primaryHeight": 431,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "Did your friends had anything to do with that?",
+          "primaryText": "Did your friends had anything to do with that?",
           "imageName": "chapter1.8",
-          "x": 49,
-          "y": 90,
-          "width": 1372,
-          "height": 228,
-          "color": "81,205,255,255"
+          "primaryX": 49,
+          "primaryY": 772,
+          "primaryWidth": 1372,
+          "primaryHeight": 258,
+          "primaryColor": "81,255,115,255"
         },
         {
-          "text": "JJ eyes widen as she looks at Right Side and then at me, my curiosity peaks at this point",
+          "primaryText": "JJ eyes widen as she looks at Right Side and then at me, my curiosity peaks at this point",
           "imageName": "chapter1.8",
-          "x": 96,
-          "y": 682,
-          "width": 1372,
-          "height": 341,
-          "color": "255,255,255,255"
+          "primaryX": 96,
+          "primaryY": 682,
+          "primaryWidth": 1372,
+          "primaryHeight": 341,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "What friends?",
+          "primaryText": "What friends?",
           "imageName": "chapter1.8",
-          "x": 96,
-          "y": 682,
-          "width": 1372,
-          "height": 341,
-          "color": "255,255,255,255"
+          "primaryX": 1050,
+          "primaryY": 152,
+          "primaryWidth": 672,
+          "primaryHeight": 127,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "An award pause follows, both of them stare at each other, in the next moment JJ turns to face me.",
+          "primaryText": "An award pause follows, both of them stare at each other, in the next moment JJ turns to face me.",
           "imageName": "chapter1.8",
-          "x": 96,
-          "y": 682,
-          "width": 1372,
-          "height": 341,
-          "color": "255,255,255,255"
+          "primaryX": 96,
+          "primaryY": 682,
+          "primaryWidth": 1372,
+          "primaryHeight": 341,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "I was going to talk to you about it anyway",
+          "primaryText": "I was going to talk to you about it anyway",
           "imageName": "chapter1.8",
-          "x": 96,
-          "y": 118,
-          "width": 1372,
-          "height": 217,
-          "color": "81,205,255,255"
+          "primaryX": 96,
+          "primaryY": 118,
+          "primaryWidth": 1372,
+          "primaryHeight": 217,
+          "primaryColor": "81,205,255,255"
         },
         {
-          "text": "At this point we are not really talking, but whispering, I lean even close to her so to hear JJ over the music. She pulls something out of her purse.  She hands a card over to me, do they still make those?",
+          "primaryText": "At this point we are not really talking, but \nwhispering, I lean even close to her so to \nhear JJ over the music. She pulls something out \nof her purse.  She hands a card over to me, \ndo they still make those?",
           "imageName": "chapter1.8",
-          "x": 42,
-          "y": 508,
-          "width": 1681,
-          "height": 572,
-          "color": "255,255,255,255"
+          "primaryX": 42,
+          "primaryY": 448,
+          "primaryWidth": 1741,
+          "primaryHeight": 572,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "StoreHouse 21ºC, Old Port \n Night",
+          "primaryText": "StoreHouse 21-C, Old Port \n Night",
           "imageName": "chapter1.1",
-          "x": 120,
-          "y": 478,
-          "width": 1681,
-          "height": 238,
-          "color": "255,255,255,255"
+          "primaryX": 120,
+          "primaryY": 478,
+          "primaryWidth": 1681,
+          "primaryHeight": 238,
+          "primaryColor": "255,255,255,255",
+          "primaryHasBorder": false
         },
         {
-          "text": "Oh, no.. this definitely looks like the type of thing that could get you arrested, or worse.",
+          "primaryText": "Oh, no.. this definitely looks like the type of thing that could get you arrested, or worse.",
           "imageName": "chapter1.8",
-          "x": 63,
-          "y": 689,
-          "width": 1417,
-          "height": 317,
-          "color": "255,255,255,255"
+          "primaryX": 63,
+          "primaryY": 689,
+          "primaryWidth": 1417,
+          "primaryHeight": 317,
+          "primaryColor": "255,255,255,255",
+          "primaryHasBorder": true
         },
         {
-          "text": "JJ, what are you getting yourself into?",
+          "primaryText": "JJ, what are you getting yourself into?",
           "imageName": "chapter1.8",
-          "x": 745,
-          "y": 115,
-          "width": 1089,
-          "height": 217,
-          "color": "255,255,255,255"
+          "primaryX": 745,
+          "primaryY": 115,
+          "primaryWidth": 1089,
+          "primaryHeight": 237,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "Its just… you know, some friends that get together to discuss how to change things",
+          "primaryText": "Its just… you know, some friends \nthat get together to discuss how \nto change things",
           "imageName": "chapter1.8",
-          "x": 169,
-          "y": 69,
-          "width": 1212,
-          "height": 322,
-          "color": "81,205,255,255"
+          "primaryX": 169,
+          "primaryY": 69,
+          "primaryWidth": 1292,
+          "primaryHeight": 322,
+          "primaryColor": "81,205,255,255"
         },
         {
-          "text": "JJ, this type of thing could get you killed, and people like us… we. can’t change how things are",
+          "primaryText": "JJ, this type of thing could get you killed, and people like us… we can’t change how things are",
           "imageName": "chapter1.8",
-          "x": 662,
-          "y": 62,
-          "width": 1212,
-          "height": 317,
-          "color": "255,255,255,255"
+          "primaryX": 582,
+          "primaryY": 62,
+          "primaryWidth": 1292,
+          "primaryHeight": 317,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "Well, life can’t keep going like this, I can’t just sit around and do nothing!",
+          "primaryText": "Well, life can’t keep going like this, I can’t just sit around and do nothing!",
           "imageName": "chapter1.8",
-          "x": 57,
-          "y": 62,
-          "width": 1212,
-          "height": 322,
-          "color": "81,205,255,255"
+          "primaryX": 57,
+          "primaryY": 62,
+          "primaryWidth": 1212,
+          "primaryHeight": 322,
+          "primaryColor": "81,205,255,255"
         },
         {
-          "text": "I get it, but it is still dangerous",
+          "primaryText": "I get it, but it is still dangerous",
           "imageName": "chapter1.8",
-          "x": 0,
-          "y": 892,
-          "width": 1212,
-          "height": 99,
-          "color": "81,255,115,255"
+          "primaryX": 40,
+          "primaryY": 822,
+          "primaryWidth": 1212,
+          "primaryHeight": 127,
+          "primaryColor": "81,255,115,255"
         },
         {
-          "text": "I want to take the risk",
+          "primaryText": "I want to take the risk",
           "imageName": "chapter1.8",
-          "x": 0,
-          "y": 138,
-          "width": 1212,
-          "height": 99,
-          "color": "81,205,255,255"
+          "primaryX": 200,
+          "primaryY": 138,
+          "primaryWidth": 892,
+          "primaryHeight": 127,
+          "primaryColor": "81,205,255,255"
         },
         {
-          "text": "Another awkward silence, damn what is she hoping to accomplish anyway? JJ looks at me",
+          "primaryText": "Another awkward silence, damn\n what is she hoping to accomplish \nanyway? JJ looks at me",
           "imageName": "chapter1.8",
-          "x": 126,
-          "y": 634,
-          "width": 1267,
-          "height": 327,
-          "color": "255,255,255,255"
+          "primaryX": 126,
+          "primaryY": 634,
+          "primaryWidth": 1307,
+          "primaryHeight": 327,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "If you want to help too, you can… you know, show up",
+          "primaryText": "If you want to help too, you can… you know, show up",
           "imageName": "chapter1.8",
-          "x": 31,
-          "y": 786,
-          "width": 1267,
-          "height": 260,
-          "color": "81,255,115,255"
+          "primaryX": 51,
+          "primaryY": 686,
+          "primaryWidth": 1167,
+          "primaryHeight": 260,
+          "primaryColor": "81,255,115,255"
         },
         {
-          "text": "I don’t know, this can make life a lot worse",
+          "primaryText": "I don’t know, this can make life a lot worse",
           "imageName": "chapter1.8",
-          "x": 653,
-          "y": 104,
-          "width": 1267,
-          "height": 217,
-          "color": "255,255,255,255"
+          "primaryX": 653,
+          "primaryY": 104,
+          "primaryWidth": 1267,
+          "primaryHeight": 217,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "People like us, getting together to change things, even if its just talking, it is as excuse to get rid of us. They are just talking, right?",
+          "primaryText": "People like us, getting together to \nchange things, even if its just \ntalking, it is as excuse to get rid of \nus. They are just talking, right?",
           "imageName": "chapter1.8",
-          "x": 154,
-          "y": 540,
-          "width": 1267,
-          "height": 436,
-          "color": "255,255,255,255"
+          "primaryX": 154,
+          "primaryY": 540,
+          "primaryWidth": 1367,
+          "primaryHeight": 436,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "So, the theft, was it them?",
+          "primaryText": "So, the theft, was it them?",
           "imageName": "chapter1.8",
-          "x": 0,
-          "y": 120,
-          "width": 1267,
-          "height": 99,
-          "color": "81,205,255,255"
+          "primaryX": 150,
+          "primaryY": 860,
+          "primaryWidth": 967,
+          "primaryHeight": 127,
+          "primaryColor": "81,255,115,255"
         },
         {
-          "text": "And yet another pause",
+          "primaryText": "And yet another pause",
           "imageName": "chapter1.8",
-          "x": 154,
-          "y": 808,
-          "width": 1267,
-          "height": 99,
-          "color": "255,255,255,255"
+          "primaryX": 354,
+          "primaryY": 808,
+          "primaryWidth": 967,
+          "primaryHeight": 127,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "I can’t say",
+          "primaryText": "I can’t say",
           "imageName": "chapter1.8",
-          "x": 130,
-          "y": 818,
-          "width": 701,
-          "height": 99,
-          "color": "81,255,115,255"
+          "primaryX": 230,
+          "primaryY": 148,
+          "primaryWidth": 451,
+          "primaryHeight": 127,
+          "primaryColor": "81,205,255,255"
         },
         {
-          "text": "I’m probably looking really nervous right now, I feel really nervous, JJ turns to me",
+          "primaryText": "I’m probably looking really nervous right now, I feel really nervous, JJ turns to me",
           "imageName": "chapter1.8",
-          "x": 154,
-          "y": 626,
-          "width": 1267,
-          "height": 317,
-          "color": "255,255,255,255"
+          "primaryX": 154,
+          "primaryY": 626,
+          "primaryWidth": 1267,
+          "primaryHeight": 317,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "Its gonna be alright",
+          "primaryText": "Its gonna be alright",
           "imageName": "chapter1.8",
-          "x": 130,
-          "y": 818,
-          "width": 830,
-          "height": 99,
-          "color": "81,255,115,255"
+          "primaryX": 130,
+          "primaryY": 139,
+          "primaryWidth": 830,
+          "primaryHeight": 127,
+          "primaryColor": "81,205,255,255"
         },
         {
-          "text": "You don’t know that",
+          "primaryText": "You don’t know that",
           "imageName": "chapter1.8",
-          "x": 95,
-          "y": 139,
-          "width": 830,
-          "height": 99,
-          "color": "81,205,255,255"
+          "primaryX": 87,
+          "primaryY": 847,
+          "primaryWidth": 830,
+          "primaryHeight": 127,
+          "primaryColor": "81,255,115,255"
         },
         {
-          "text": "Guys, things are not going to get better you know, ",
+          "primaryText": "Guys, things are not going to get better you know, ",
           "imageName": "chapter1.8",
-          "x": 58,
-          "y": 741,
-          "width": 1349,
-          "height": 217,
-          "color": "81,255,115,255"
+          "primaryX": 58,
+          "primaryY": 102,
+          "primaryWidth": 1349,
+          "primaryHeight": 217,
+          "primaryColor": "81,205,255,255"
         },
         {
-          "text": "its only getting worse and they’ll keep getting worse unless we get together and do something about it",
+          "primaryText": "its only getting worse and they’ll keep \ngetting worse unless we get together \nand do something about it",
           "imageName": "chapter1.8",
-          "x": 58,
-          "y": 668,
-          "width": 1349,
-          "height": 317,
-          "color": "81,255,115,255"
+          "primaryX": 58,
+          "primaryY": 44,
+          "primaryWidth": 1485,
+          "primaryHeight": 357,
+          "primaryColor": "81,205,255,255"
         },
         {
-          "text": "She keeps looking to the sides, me and Right Side can clearly see she’s scared, I think we all are.",
+          "primaryText": "She keeps looking to the sides, me and Right Side can clearly see she’s scared, I think we all are.",
           "imageName": "chapter1.8",
-          "x": 205,
-          "y": 623,
-          "width": 1349,
-          "height": 317,
-          "color": "255,255,255,255"
+          "primaryX": 205,
+          "primaryY": 623,
+          "primaryWidth": 1409,
+          "primaryHeight": 357,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "This silence goes on for a little while, I really don’t want things to backfire, this life hasn’t given me many friends and JJ is a really nice girl.",
+          "primaryText": "This silence goes on for a little while, \nI really don’t want things to backfire, \nthis life hasn’t given me many friends \nand JJ is a really nice girl.",
           "imageName": "chapter1.8",
-          "x": 205,
-          "y": 623,
-          "width": 1349,
-          "height": 405,
-          "color": "255,255,255,255"
+          "primaryX": 205,
+          "primaryY": 573,
+          "primaryWidth": 1409,
+          "primaryHeight": 435,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "Right Side stands up and picks his jacket, he looks the most composed out of the three of us.",
+          "primaryText": "Right Side stands up and picks his \njacket, he looks the most composed \nout of the three of us.",
           "imageName": "chapter1.8",
-          "x": 205,
-          "y": 663,
-          "width": 1349,
-          "height": 314,
-          "color": "255,255,255,255"
+          "primaryX": 205,
+          "primaryY": 663,
+          "primaryWidth": 1389,
+          "primaryHeight": 357,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "I think we’ll need some time to process all of that, come on, lets walk home",
+          "primaryText": "I think we’ll need some time to \nprocess all of that, come on, lets \nwalk home",
           "imageName": "chapter1.8",
-          "x": 0,
-          "y": 67,
-          "width": 1349,
-          "height": 314,
-          "color": "81,205,255,255"
+          "primaryX": 100,
+          "primaryY": 683,
+          "primaryWidth": 1269,
+          "primaryHeight": 314,
+          "primaryColor": "81,255,115,255"
         },
         {
-          "text": "We pay our bills and leave the bar, Joel asks us if everything is alright, we probably look stressed beyond belief.",
+          "primaryText": "We pay our bills and leave the bar, \nJoel asks us if everything is alright, we \nprobably look stressed beyond belief.",
           "imageName": "chapter1.8",
-          "x": 163,
-          "y": 668,
-          "width": 1436,
-          "height": 314,
-          "color": "255,255,255,255"
+          "primaryX": 163,
+          "primaryY": 668,
+          "primaryWidth": 1476,
+          "primaryHeight": 314,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "We walk under the bridge, the entrance to the pub in sights, when from above we see four police hover vans flying towards the hidden path to Blues Under the Bridge",
+          "primaryText": "We walk under the bridge, the \nentrance to the pub in sights, when \nfrom above we see four police \nhover vans flying towards the hidden \npath to Blues Under the Bridge",
           "imageName": "chapter1.9",
-          "x": 535,
-          "y": 540,
-          "width": 1359,
-          "height": 500
+          "primaryX": 335,
+          "primaryY": 500,
+          "primaryWidth": 1419,
+          "primaryHeight": 537
         },
         {
-          "text": "a dozen or so armed man go through the entrance we just left out of. We can do nothing but stand there and watch.",
+          "primaryText": "a dozen or so armed man go \nthrough the entrance we just left out \nof. We can do nothing but stand \nthere and watch.",
           "imageName": "chapter1.9",
-          "x": 538,
-          "y": 632,
-          "width": 1359,
-          "height": 400
+          "primaryX": 518,
+          "primaryY": 632,
+          "primaryWidth": 1389,
+          "primaryHeight": 420
         },
         {
-          "text": "Dammit, not this place! \n We hear the loud noise of a door breaking",
+          "primaryText": "Dammit, not this place! \n We hear the loud noise of a door breaking",
           "imageName": "chapter1.9",
-          "x": 538,
-          "y": 632,
-          "width": 1359,
-          "height": 317
+          "primaryX": 738,
+          "primaryY": 632,
+          "primaryWidth": 1159,
+          "primaryHeight": 337
         },
         {
-          "text": "There aren’t any others like it.\n We hear screams",
+          "primaryText": "There aren’t any others like it.\n We hear screams",
           "imageName": "chapter1.9",
-          "x": 545,
-          "y": 707,
-          "width": 1359,
-          "height": 227
+          "primaryX": 645,
+          "primaryY": 707,
+          "primaryWidth": 1129,
+          "primaryHeight": 227
         },
         {
-          "text": "We had so many good moments there!\nGunshots…",
+          "primaryText": "We had so many good moments there!\nGunshots…",
           "imageName": "chapter1.9",
-          "x": 672,
-          "y": 705,
-          "width": 1188,
-          "height": 317
+          "primaryX": 872,
+          "primaryY": 705,
+          "primaryWidth": 988,
+          "primaryHeight": 317
         },
         {
-          "text": "Right Side turns to JJ",
+          "primaryText": "Right Side turns to JJ",
           "imageName": "chapter1.9",
-          "x": 672,
-          "y": 705,
-          "width": 1188,
-          "height": 99
+          "primaryX": 872,
+          "primaryY": 705,
+          "primaryWidth": 888,
+          "primaryHeight": 127
         },
         {
-          "text": "I'm in…",
+          "secondaryText": "I'm in…",
           "imageName": "chapter1.9",
-          "x": 1452,
-          "y": 875,
-          "width": 265,
-          "height": 99
+          "secondaryX": 1452,
+          "secondaryY": 875,
+          "secondaryWidth": 400,
+          "secondaryHeight": 127,
+          "secondaryColor": "81,255,115,255",
+          "secondaryTransitionTimeOut": 0.5,
+          "secondaryTransitionTimeIn": 0.5
         },
         {
-          "text": "He could barely end the phrase before..",
+          "primaryText": "He could barely end the phrase before..",
           "imageName": "chapter1.9",
-          "x": 675,
-          "y": 755,
-          "width": 1188,
-          "height": 209
+          "primaryX": 775,
+          "primaryY": 755,
+          "primaryWidth": 1088,
+          "primaryHeight": 239
         },
         {
-          "text": "Friend, I was worried, there seems to be a disturbance near you, we should leave right now and go home",
+          "primaryText": "Friend, I was worried, there seems to be a disturbance near you, we should leave right now and go home",
           "imageName": "chapter1.9",
-          "x": 670,
-          "y": 105,
-          "width": 1188,
-          "height": 410
+          "primaryX": 570,
+          "primaryY": 105,
+          "primaryWidth": 1248,
+          "primaryHeight": 410,
+          "primaryFontName": "Champagne&Limousines-Italic",
+          "primaryFontSize": 100
         },
         {
-          "text": "As soon as I heard that voice the small red eye with a diagonal line crossing it appeared above both their heads,",
+          "primaryText": "As soon as I heard that voice the small red eye with a diagonal line crossing it appeared above both their heads,",
           "imageName": "chapter1.9",
-          "x": 561,
-          "y": 624,
-          "width": 1359,
-          "height": 410
+          "primaryX": 561,
+          "primaryY": 624,
+          "primaryWidth": 1359,
+          "primaryHeight": 410,
+          "primaryFontName": "Champagne&Limousines",
+          "primaryFontSize": 100
         },
         {
-          "text": "We don’t stay there too long, right after hearing MONDARK we started walking away,",
+          "primaryText": "We don’t stayed there too long, right after hearing MONDARK we started walking away,",
           "imageName": "chapter1.9",
-          "x": 696,
-          "y": 692,
-          "width": 1193,
-          "height": 317
+          "primaryX": 561,
+          "primaryY": 624,
+          "primaryWidth": 1263,
+          "primaryHeight": 317
         },
         {
-          "text": "what Right Side said is still in my mind, was he really going to join?",
+          "primaryText": "what Right Side said is still in my mind, was he really going to join?",
           "imageName": "chapter1.9",
-          "x": 739,
-          "y": 725,
-          "width": 1118,
-          "height": 317
+          "primaryX": 561,
+          "primaryY": 624,
+          "primaryWidth": 1118,
+          "primaryHeight": 317,
+          "primaryFontName": "Champagne&Limousines",
+          "primaryFontSize": 100
         },
         {
-          "text": "Join what, friend? Is everything alright?",
+          "primaryText": "Join what, friend? Is everything alright?",
           "imageName": "chapter1.9",
-          "x": 842,
-          "y": 107,
-          "width": 1058,
-          "height": 217
+          "primaryX": 942,
+          "primaryY": 107,
+          "primaryWidth": 788,
+          "primaryHeight": 237,
+          "primaryFontName": "Champagne&Limousines-Italic",
+          "primaryFontSize": 100
         },
         {
-          "text": "Shit",
+          "secondaryText": "Shit",
           "imageName": "chapter1.9",
-          "x": 1511,
-          "y": 377,
-          "width": 128,
-          "height": 99
+          "secondaryX": 1511,
+          "secondaryY": 377,
+          "secondaryWidth": 228,
+          "secondaryHeight": 127,
+          "secondaryFontName": "Champagne&Limousines",
+          "secondaryFontSize": 100,
+          "secondaryColor": "255,255,255,255",
+          "secondaryTransitionTimeIn": 0.5,
+          "secondaryTransitionTimeOut": 0.5,
+          "secondaryHasBorder": false
         },
         {
-          "text": "Nothing, its nothing\n MONDARK",
+          "primaryText": "Nothing, its nothing\n MONDARK",
           "imageName": "chapter1.9",
-          "x": 157,
-          "y": 738,
-          "width": 762,
-          "height": 217
+          "primaryX": 157,
+          "primaryY": 738,
+          "primaryWidth": 762,
+          "primaryHeight": 217,
+          "primaryFontName": "Champagne&Limousines",
+          "primaryFontSize": 100
         },
         {
-          "text": "Both JJ and Right Side look stiff and scared, she suddenly stops",
+          "primaryText": "Both JJ and Right Side look stiff and scared, she suddenly stops",
           "imageName": "chapter1.9",
-          "x": 787,
-          "y": 678,
-          "width": 1088,
-          "height": 317
+          "primaryX": 787,
+          "primaryY": 678,
+          "primaryWidth": 1088,
+          "primaryHeight": 317,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": "I'll see you there tomorrow then",
+          "primaryText": "I'll see you there tomorrow then",
           "imageName": "chapter1.9",
-          "x": 1033,
-          "y": 763,
-          "width": 751,
-          "height": 217
+          "primaryX": 1033,
+          "primaryY": 763,
+          "primaryWidth": 751,
+          "primaryHeight": 217,
+          "primaryColor": "81,205,255,255"
         },
         {
-          "text": "She nods to Right Side, who nods back, and proceeds to give me a serious look before walking away in a different direction,",
+          "primaryText": "She nods to Right Side, who nods back, and proceeds to give me a serious look before walking away in a different direction,",
           "imageName": "chapter1.9",
-          "x": 759,
-          "y": 540,
-          "width": 1142,
-          "height": 501
+          "primaryX": 759,
+          "primaryY": 490,
+          "primaryWidth": 1142,
+          "primaryHeight": 551,
+          "primaryColor": "255,255,255,255"
         },
         {
-          "text": " home I hope. Short after Right Side nods to me too and starts walking in the same direction as JJ.",
+          "primaryText": " home I hope. Short after Right Side nods to me too and starts walking in the same direction as JJ.",
           "imageName": "chapter1.9",
-          "x": 759,
-          "y": 623,
-          "width": 1142,
-          "height": 417
+          "primaryX": 759,
+          "primaryY": 623,
+          "primaryWidth": 1142,
+          "primaryHeight": 417
         },
         {
-          "text": "WHAT AM I SUPPOSE TO DO?",
+          "primaryText": "WHAT AM I SUPPOSE TO DO?",
           "imageName": "chapter1.9",
-          "x": 759,
-          "y": 791,
-          "width": 1142,
-          "height": 99
+          "primaryX": 559,
+          "primaryY": 791,
+          "primaryWidth": 1242,
+          "primaryHeight": 137
         },
         {
-          "text": "Friend, is everything alright?",
+          "primaryText": "Friend, is everything alright?",
           "imageName": "chapter1.9",
-          "x": 1076,
-          "y": 107,
-          "width": 708,
-          "height": 217
+          "primaryX": 1076,
+          "primaryY": 107,
+          "primaryWidth": 798,
+          "primaryHeight": 237,
+          "primaryFontName": "Champagne&Limousines-Italic",
+          "primaryFontSize": 100
         },
         {
-          "text": "Where are mister Leonard and Miss Jessy going tomorrow? Is there something I should know? Are you going too?",
+          "primaryText": "Where are mister Leonard and Miss Jessy going tomorrow? Is there something I should know? Are you going too?",
           "imageName": "chapter1.9",
-          "x": 620,
-          "y": 140,
-          "width": 1232,
-          "height": 417
-        },
-        {
-          "text": "Where are mister Leonard and Miss Jessy going tomorrow? Is there something I should know? Are you going too?",
-          "imageName": "chapter1.9",
-          "x": 620,
-          "y": 140,
-          "width": 1232,
-          "height": 417
+          "primaryX": 620,
+          "primaryY": 140,
+          "primaryWidth": 1232,
+          "primaryHeight": 417
         }
       ],
       "nextPossibleEvents": [
@@ -1034,12 +1135,12 @@
       "optionText": "Yeah.. I’ll be busy tomorrow (Go with them to the meeting)",
       "scenes": [
         {
-          "text": "",
-          "imageName": "chapter1.2",
-          "x": 350,
-          "y": 500,
-          "width": 500,
-          "height": 200
+          "primaryText": "",
+          "imageName": "chapter1.9",
+          "primaryX": 620,
+          "primaryY": 140,
+          "primaryWidth": 1232,
+          "primaryHeight": 417
         }
       ]
     },
@@ -1048,12 +1149,12 @@
       "optionText": "No MONDARK, I think I’m free from tomorrow on (Go home and don’t get involved)",
       "scenes": [
         {
-          "text": "Looks like you've chose the second option!",
-          "imageName": "chapter1.2",
-          "x": 350,
-          "y": 500,
-          "width": 500,
-          "height": 200
+          "primaryText": "Where are mister Leonard and Miss Jessy going tomorrow? Is there something I should know? Are you going too?",
+          "imageName": "chapter1.9",
+          "primaryX": 620,
+          "primaryY": 140,
+          "primaryWidth": 1232,
+          "primaryHeight": 417
         }
       ]
     }

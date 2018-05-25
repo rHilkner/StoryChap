@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class GameViewController: UIViewController {
 
@@ -14,7 +15,11 @@ class GameViewController: UIViewController {
     var currentSceneIndex: Int = 0
     @IBOutlet weak var backgroundImage: UIImageView!
 //    @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var labelPrimaryText: UILabel!
+    @IBOutlet weak var labelSecondaryText: UILabel!
+
+    var backgroundSound: AVAudioPlayer?
+    var narrationSound: AVAudioPlayer?
     
     // Buttons of the choices the user may take
     @IBOutlet weak var option0Button: UIButton!
@@ -118,6 +123,8 @@ extension GameViewController {
             
             // Reading next possible events after this one
             if event.nextPossibleEvents.isEmpty {
+                self.stopBackgroundSound()
+                self.stopNarrationSound()
                 self.displayEndGameButton()
                 return
             }
@@ -147,8 +154,6 @@ extension GameViewController {
     /// Displays a set of buttons representing every possible choice the user may take to go to a next event
     func displayChoicesButtons(choices: [Event]) {
 
-        self.label.text = ""
-
         // For each choice, display it as a button
         for i in 0..<choices.count {
             self.choicesButtons[i].setTitle(choices[i].optionText, for: .normal)
@@ -174,14 +179,14 @@ extension GameViewController {
     /// Displays button with "End Game" text
     func displayEndGameButton() {
         self.backgroundImage = nil
-        self.label.text = "Well played!"
+        self.labelPrimaryText.text = "To be continued..."
         self.endGameButton.isHidden = false
         self.endGameButton.isEnabled = true
         self.setNeedsFocusUpdate()
     }
 }
 
-// Reseting game event after user makes a choice
+// Setting game for a new event
 extension GameViewController {
 
     /// Updates game current event for event given as argument
@@ -203,32 +208,7 @@ extension GameViewController {
             print("-> WARNING: Initial scene returned nil")
             return
         }
-        
-//        // Setting up background image and text label
-//        if let initialImage = initialScene.imageName {
-//            self.backgroundImage.image = UIImage(named: initialImage)
-//        }
-//
-//        self.label.text = initialScene.text
-//
-//        // Setting up the position of the text view
-//        if let x = initialScene.x, let y = initialScene.y,
-//            let width = initialScene.width, let height = initialScene.height {
-//
-//            let textPosition = CGRect(x: x, y: y, width: width, height: height)
-//            self.label.frame = textPosition
-//
-//        }
-//
-//        if let color = initialScene.color {
-//            self.label.textColor = UIColor(hexa: color)
-//        }
-//
-//        if let fontName = initialScene.fontName,
-//            let fontSize = initialScene.fontSize {
-//            self.label.font = UIFont(name: fontName, size: CGFloat(fontSize))
-//        }
+
         self.changeScene(newScene: initialScene)
-    
     }
 }

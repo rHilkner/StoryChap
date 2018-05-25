@@ -189,7 +189,7 @@
                                         </constraints>
                                         <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et tortor velit. Praesent faucibus, nibh sit amet tristique dictum, dolor nisl auctor augue, ac consequat ipsum massa eu nulla. Vivamus tincidunt velit vel leo bibendum, sit amet pretium ex scelerisque. Mauris et facilisis est, non dapibus ante. Nulla lorem turpis, pretium eu convallis sollicitudin, euismod non ligula. Curabitur a rhoncus augue. Mauris venenatis enim ac velit ullamcorper, non ultrices lectus pharetra. Vivamus fermentum mi est, sed venenatis eros rhoncus at. Donec id nulla suscipit, dignissim nibh a, fermentum est. Maecenas rutrum tincidunt egestas. Donec placerat fringilla orci in euismod.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7m2-5z-hhF">
@@ -307,7 +307,15 @@
                                 <state key="normal" title="Option #3"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVa-cq-Syy">
-                                <rect key="frame" x="163" y="89" width="148" height="70"/>
+                                <rect key="frame" x="164" y="89" width="148" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Champagne&amp;Limousines-Italic" family="Champagne &amp; Limousines" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH0-e8-Obm">
+                                <rect key="frame" x="886" y="505" width="148" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Champagne&amp;Limousines-Italic" family="Champagne &amp; Limousines" pointSize="70"/>
@@ -336,7 +344,8 @@
                     <connections>
                         <outlet property="backgroundImage" destination="qTf-69-BUM" id="1DK-xc-hRc"/>
                         <outlet property="endGameButton" destination="P2a-p1-vOK" id="6pN-oj-B03"/>
-                        <outlet property="label" destination="ZVa-cq-Syy" id="MQA-ee-CfR"/>
+                        <outlet property="labelPrimaryText" destination="ZVa-cq-Syy" id="MQA-ee-CfR"/>
+                        <outlet property="labelSecondaryText" destination="vH0-e8-Obm" id="e2E-YG-fur"/>
                         <outlet property="option0Button" destination="x49-ob-Ei9" id="nww-Me-CfD"/>
                         <outlet property="option1Button" destination="4rQ-A7-alx" id="wG4-p5-neF"/>
                         <outlet property="option2Button" destination="WQJ-OC-3T3" id="ctH-kS-Ir3"/>
