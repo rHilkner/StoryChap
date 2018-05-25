@@ -85,24 +85,10 @@ class StoryPersistence {
 
             for sceneDict in scenesDict {
                 
-                guard let sceneText = sceneDict["text"] as? String,
-                    let imageName = sceneDict["imageName"] as? String else {
-                    print("-> WARNING: Error when reading scene dictionary.")
-                    return nil
-                }
-                
-                let x = sceneDict["x"] as? Double
-                let y = sceneDict["y"] as? Double
-                let width = sceneDict["width"] as? Double
-                let height = sceneDict["height"] as? Double
-                let color = sceneDict["color"] as? String
-                let fontName = sceneDict["fontName"] as? String
-                let fontSize = sceneDict["fontSize"] as? Double
-                let transitionTimeIn = sceneDict["transitionTimeIn"] as? Double
-                let transitionTimeOut = sceneDict["transitionTimeOut"] as? Double
-                
                 // Adding scene to list of scenes
-                let scene = Scene(imageName: imageName, text: sceneText, x: x, y: y, width: width, height: height, color: color, fontName: fontName, fontSize: fontSize, transitionTimeIn: transitionTimeIn, transitionTimeOut: transitionTimeOut)
+//                let scene = Scene(primaryText: sceneText, imageName: imageName, x: x, y: y, width: width, height: height, color: color, fontName: fontName, fontSize: fontSize, transitionTimeIn: transitionTimeIn, transitionTimeOut: transitionTimeOut, hasBorder: hasBorder)
+                
+                let scene = buildScene(sceneDictionary: sceneDict)
                 scenes.append(scene)
             }
 
@@ -150,5 +136,59 @@ class StoryPersistence {
         return story
     }
 
+    static func buildScene(sceneDictionary: [String : Any]) -> Scene {
+        let primaryText = sceneDictionary["primaryText"] as? String
+        let imageName = sceneDictionary["imageName"] as? String
+        let primaryX = sceneDictionary["primaryX"] as? Double
+        let primaryY = sceneDictionary["primaryY"] as? Double
+        let primaryWidth = sceneDictionary["primaryWidth"] as? Double
+        let primaryHeight = sceneDictionary["primaryHeight"] as? Double
+        let primaryColor = sceneDictionary["primaryColor"] as? String
+        let primaryFontName = sceneDictionary["primaryFontName"] as? String
+        let primaryFontSize = sceneDictionary["primaryFontSize"] as? Double
+        let primaryTransitionTimeIn = sceneDictionary["primaryTransitionTimeIn"] as? Double
+        let primaryTransitionTimeOut = sceneDictionary["primaryTransitionTimeOut"] as? Double
+        let primaryHasBorder = sceneDictionary["primaryHasBorder"] as? Bool
+        let secondaryText = sceneDictionary["secondaryText"] as? String
+        let secondaryX = sceneDictionary["secondaryX"] as? Double
+        let secondaryY = sceneDictionary["secondaryY"] as? Double
+        let secondaryColor = sceneDictionary["secondaryColor"] as? String
+        let secondaryWidth = sceneDictionary["secondaryWidth"] as? Double
+        let secondaryHeight = sceneDictionary["secondaryHeight"] as? Double
+        let secondaryFontName = sceneDictionary["secondaryFontName"] as? String
+        let secondaryFontSize = sceneDictionary["secondaryFontSize"] as? Double
+        let secondaryTransitionTimeIn = sceneDictionary["secondaryTransitionTimeIn"] as? Double
+        let secondaryTransitionTimeOut = sceneDictionary["secondaryTransitionTimeOut"] as? Double
+        let secondaryHasBorder = sceneDictionary["secondaryHasBorder"] as? Bool
+        
+        var scene = Scene()
+        
+        scene.primaryText = primaryText
+        scene.imageName = imageName
+        scene.primaryX = primaryX
+        scene.primaryY = primaryY
+        scene.primaryWidth = primaryWidth
+        scene.primaryHeight = primaryHeight
+        scene.primaryColor = primaryColor
+        scene.primaryFontName = primaryFontName
+        scene.primaryFontSize = primaryFontSize
+        scene.primaryTransitionTimeIn = primaryTransitionTimeIn
+        scene.primaryTransitionTimeOut = primaryTransitionTimeOut
+        scene.primaryHasBorder = primaryHasBorder
+        
+        scene.secondaryText = secondaryText
+        scene.secondaryX = secondaryX
+        scene.secondaryY = secondaryY
+        scene.secondaryWidth = secondaryWidth
+        scene.secondaryHeight = secondaryHeight
+        scene.secondaryColor = secondaryColor
+        scene.secondaryFontName = secondaryFontName
+        scene.secondaryFontSize = secondaryFontSize
+        scene.secondaryTransitionTimeIn = secondaryTransitionTimeIn
+        scene.secondaryTransitionTimeOut = secondaryTransitionTimeOut
+        scene.secondaryHasBorder = secondaryHasBorder
+        
+        return scene
+    }
 
 }

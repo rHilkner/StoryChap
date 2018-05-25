@@ -14,7 +14,8 @@ class GameViewController: UIViewController {
     var currentSceneIndex: Int = 0
     @IBOutlet weak var backgroundImage: UIImageView!
 //    @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var labelPrimaryText: UILabel!
+    @IBOutlet weak var labelSecondaryText: UILabel!
     
     // Buttons of the choices the user may take
     @IBOutlet weak var option0Button: UIButton!
@@ -147,7 +148,7 @@ extension GameViewController {
     /// Displays a set of buttons representing every possible choice the user may take to go to a next event
     func displayChoicesButtons(choices: [Event]) {
 
-        self.label.text = ""
+        self.labelPrimaryText.text = ""
 
         // For each choice, display it as a button
         for i in 0..<choices.count {
@@ -174,7 +175,7 @@ extension GameViewController {
     /// Displays button with "End Game" text
     func displayEndGameButton() {
         self.backgroundImage = nil
-        self.label.text = "Well played!"
+        self.labelPrimaryText.text = "Well played!"
         self.endGameButton.isHidden = false
         self.endGameButton.isEnabled = true
         self.setNeedsFocusUpdate()

@@ -9,15 +9,43 @@
 import UIKit
 
 struct Scene {
-    let imageName: String?
-    let text: String
-    let x: Double?
-    let y: Double?
-    let width: Double?
-    let height: Double?
-    let color: String?
-    let fontName: String?
-    let fontSize: Double?
-    let transitionTimeIn: Double?
-    let transitionTimeOut: Double?
+    var imageName: String? = nil
+    var primaryText: String? = nil
+    var primaryX: Double? = nil
+    var primaryY: Double? = nil
+    var primaryWidth: Double? = nil
+    var primaryHeight: Double? = nil
+    var primaryColor: String? = nil
+    var primaryFontName: String? = nil
+    var primaryFontSize: Double? = nil
+    var primaryTransitionTimeIn: Double? = nil
+    var primaryTransitionTimeOut: Double? = nil
+    var primaryHasBorder: Bool? = nil
+    
+    var secondaryText: String? = nil
+    var secondaryX: Double? = nil
+    var secondaryY: Double? = nil
+    var secondaryWidth: Double? = nil
+    var secondaryHeight: Double? = nil
+    var secondaryColor: String? = nil
+    var secondaryFontName: String? = nil
+    var secondaryFontSize: Double? = nil
+    var secondaryTransitionTimeIn: Double? = nil
+    var secondaryTransitionTimeOut: Double? = nil
+    var secondaryHasBorder: Bool? = nil
+    
+//    init(primaryText: String, imageName: String?, x: Double?, y: Double?, width: Double?, height: Double?, color: String?, fontName: String?, fontSize: Double?, transitionTimeIn: Double?, transitionTimeOut: Double?, hasBorder: Bool?) {
+//        self.primaryText = primaryText
+//        self.imageName = imageName
+//        self.x = x
+//        self.y = y
+//        self.width = width
+//        self.height = height
+//        self.color = color
+//        self.fontName = fontName
+//        self.fontSize = fontSize
+//        self.transitionTimeIn = transitionTimeIn
+//        self.transitionTimeOut = transitionTimeOut
+//        self.hasBorder = hasBorder
+//    }
 }
