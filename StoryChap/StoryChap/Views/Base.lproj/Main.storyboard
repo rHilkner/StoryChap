@@ -11,8 +11,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Champagne &amp; Limousines.ttf">
-            <string>Champagne&amp;Limousines</string>
+        <array key="Champagne &amp; Limousines Italic.ttf">
+            <string>Champagne&amp;Limousines-Italic</string>
         </array>
     </customFonts>
     <scenes>
@@ -310,7 +310,7 @@
                                 <rect key="frame" x="163" y="89" width="148" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Champagne&amp;Limousines" family="Champagne &amp; Limousines" pointSize="70"/>
+                                <fontDescription key="fontDescription" name="Champagne&amp;Limousines-Italic" family="Champagne &amp; Limousines" pointSize="70"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

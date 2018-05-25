@@ -23,8 +23,9 @@
           "width": 714,
           "height": 71,
           "color": "255,255,255,255",
-          "fontName": "Champagne & Limousines",
+          "fontName": "Champagne&Limousines",
           "fontSize": 70,
+          "transitionTimeIn": 2,
           "transitionTimeOut": 2
         },
         {
@@ -35,8 +36,9 @@
           "width": 1274,
           "height": 436,
           "color": "255,255,255,255",
-          "fontName": "Champagne & Limousines",
+          "fontName": "Champagne&Limousines",
           "fontSize": 70,
+          "transitionTimeIn": 2,
           "transitionTimeOut": 2
         },
         {
@@ -47,8 +49,9 @@
           "width": 714,
           "height": 71,
           "color": "255,255,255,255",
-          "fontName": "Champagne & Limousines",
+          "fontName": "Champagne&LimousinesItalic",
           "fontSize": 70,
+          "transitionTimeIn": 2,
           "transitionTimeOut": 2
         },
         {

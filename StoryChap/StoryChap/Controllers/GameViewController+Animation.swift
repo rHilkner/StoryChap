@@ -40,6 +40,8 @@ extension GameViewController {
             self.label.textColor = UIColor(hexa: color)
         }
         
+        
+        
         if let fontName = currentScene.fontName,
             let fontSize = currentScene.fontSize {
             self.label.font = UIFont(name: fontName, size: CGFloat(fontSize))

@@ -11,9 +11,13 @@
 		642D48B020B796240011CA34 /* MenuViewController+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642D48AC20B796230011CA34 /* MenuViewController+Animations.swift */; };
 		642D48B120B796240011CA34 /* MenuViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642D48AD20B796240011CA34 /* MenuViewController+CollectionView.swift */; };
 		642D48B220B796240011CA34 /* MenuController+FocusGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642D48AE20B796240011CA34 /* MenuController+FocusGuide.swift */; };
+		642D48B620B825530011CA34 /* Champagne-&-Limousines-Bold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 642D48B320B8254E0011CA34 /* Champagne-&-Limousines-Bold-Italic.ttf */; };
+		642D48B720B825530011CA34 /* Champagne-&-Limousines-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 642D48B520B8254E0011CA34 /* Champagne-&-Limousines-Bold.ttf */; };
+		642D48B820B825530011CA34 /* Champagne-&-Limousines-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 642D48B420B8254E0011CA34 /* Champagne-&-Limousines-Italic.ttf */; };
+		642D48B920B828210011CA34 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6139B0120A9D5ED00B168B7 /* Info.plist */; };
 		6469B4DD20B32A1400123781 /* mondark.json in Resources */ = {isa = PBXBuildFile; fileRef = 6469B4DC20B32A1400123781 /* mondark.json */; };
 		64AAE60120B438250050EA83 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AAE60020B438250050EA83 /* Utils.swift */; };
-		64AAE60320B447900050EA83 /* Champagne & Limousines.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AAE60220B447870050EA83 /* Champagne & Limousines.ttf */; };
+		64AAE60320B447900050EA83 /* Champagne-&-Limousines.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64AAE60220B447870050EA83 /* Champagne-&-Limousines.ttf */; };
 		64AAE60620B4597E0050EA83 /* GameViewController+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AAE60520B4597E0050EA83 /* GameViewController+Animation.swift */; };
 		C6139AF920A9D5EA00B168B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6139AF820A9D5EA00B168B7 /* AppDelegate.swift */; };
 		C6139AFE20A9D5EA00B168B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6139AFC20A9D5EA00B168B7 /* Main.storyboard */; };
@@ -39,9 +43,12 @@
 		642D48AC20B796230011CA34 /* MenuViewController+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MenuViewController+Animations.swift"; sourceTree = "<group>"; };
 		642D48AD20B796240011CA34 /* MenuViewController+CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MenuViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		642D48AE20B796240011CA34 /* MenuController+FocusGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MenuController+FocusGuide.swift"; sourceTree = "<group>"; };
+		642D48B320B8254E0011CA34 /* Champagne-&-Limousines-Bold-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Champagne-&-Limousines-Bold-Italic.ttf"; sourceTree = "<group>"; };
+		642D48B420B8254E0011CA34 /* Champagne-&-Limousines-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Champagne-&-Limousines-Italic.ttf"; sourceTree = "<group>"; };
+		642D48B520B8254E0011CA34 /* Champagne-&-Limousines-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Champagne-&-Limousines-Bold.ttf"; sourceTree = "<group>"; };
 		6469B4DC20B32A1400123781 /* mondark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mondark.json; sourceTree = "<group>"; };
 		64AAE60020B438250050EA83 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		64AAE60220B447870050EA83 /* Champagne & Limousines.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Champagne & Limousines.ttf"; sourceTree = "<group>"; };
+		64AAE60220B447870050EA83 /* Champagne-&-Limousines.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Champagne-&-Limousines.ttf"; sourceTree = "<group>"; };
 		64AAE60520B4597E0050EA83 /* GameViewController+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameViewController+Animation.swift"; sourceTree = "<group>"; };
 		C6139AF520A9D5EA00B168B7 /* StoryChap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryChap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6139AF820A9D5EA00B168B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +110,10 @@
 				C6139B0820A9E2BE00B168B7 /* Views */,
 				C6139AFF20A9D5ED00B168B7 /* Assets.xcassets */,
 				6469B4DC20B32A1400123781 /* mondark.json */,
-				64AAE60220B447870050EA83 /* Champagne & Limousines.ttf */,
+				642D48B320B8254E0011CA34 /* Champagne-&-Limousines-Bold-Italic.ttf */,
+				642D48B520B8254E0011CA34 /* Champagne-&-Limousines-Bold.ttf */,
+				642D48B420B8254E0011CA34 /* Champagne-&-Limousines-Italic.ttf */,
+				64AAE60220B447870050EA83 /* Champagne-&-Limousines.ttf */,
 				C6139B0120A9D5ED00B168B7 /* Info.plist */,
 			);
 			path = StoryChap;
@@ -246,11 +256,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64AAE60320B447900050EA83 /* Champagne & Limousines.ttf in Resources */,
+				642D48B720B825530011CA34 /* Champagne-&-Limousines-Bold.ttf in Resources */,
+				64AAE60320B447900050EA83 /* Champagne-&-Limousines.ttf in Resources */,
+				642D48B920B828210011CA34 /* Info.plist in Resources */,
 				6469B4DD20B32A1400123781 /* mondark.json in Resources */,
 				C6139B0020A9D5ED00B168B7 /* Assets.xcassets in Resources */,
+				642D48B620B825530011CA34 /* Champagne-&-Limousines-Bold-Italic.ttf in Resources */,
 				C6139AFE20A9D5EA00B168B7 /* Main.storyboard in Resources */,
 				C779A48820B32D1D00F7F6C3 /* mondark.json in Resources */,
+				642D48B820B825530011CA34 /* Champagne-&-Limousines-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
