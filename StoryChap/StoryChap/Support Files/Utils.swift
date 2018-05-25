@@ -20,8 +20,7 @@ extension UIColor {
         let blue = CGFloat((colors[2] as NSString).doubleValue) / 255
         let alpha = CGFloat((colors[3] as NSString).doubleValue) / 255
         
-        
-        self.init(ciColor: CIColor(red: red, green: green, blue: blue, alpha: alpha))
+        self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
     
 }

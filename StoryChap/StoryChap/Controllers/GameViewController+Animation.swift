@@ -28,7 +28,6 @@ extension GameViewController {
         }
         
         if currentScene.secondaryText != nil {
-            print("Entrou no método de set da label, o texto é: \(currentScene.secondaryText!)")
             setTextForSecondaryLabel(currentScene)
         } else {
             self.labelSecondaryText.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
@@ -72,6 +71,7 @@ extension GameViewController {
         
         if let color = currentScene.primaryColor {
             self.labelPrimaryText.textColor = UIColor(hexa: color)
+            
         }
         
         if let fontName = currentScene.primaryFontName,
@@ -103,6 +103,7 @@ extension GameViewController {
         }
         
         if let color = currentScene.secondaryColor {
+            
             self.labelSecondaryText.textColor = UIColor(hexa: color)
         }
         
