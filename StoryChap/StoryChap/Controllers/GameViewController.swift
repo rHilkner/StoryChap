@@ -148,8 +148,6 @@ extension GameViewController {
     /// Displays a set of buttons representing every possible choice the user may take to go to a next event
     func displayChoicesButtons(choices: [Event]) {
 
-        self.labelPrimaryText.text = ""
-
         // For each choice, display it as a button
         for i in 0..<choices.count {
             self.choicesButtons[i].setTitle(choices[i].optionText, for: .normal)
@@ -175,7 +173,7 @@ extension GameViewController {
     /// Displays button with "End Game" text
     func displayEndGameButton() {
         self.backgroundImage = nil
-        self.labelPrimaryText.text = "Well played!"
+        self.labelPrimaryText.text = "To be continued..."
         self.endGameButton.isHidden = false
         self.endGameButton.isEnabled = true
         self.setNeedsFocusUpdate()
