@@ -10,6 +10,9 @@ import UIKit
 
 struct Scene {
     var imageName: String? = nil
+    var narrationSoundName: String? = nil
+    var backgroundSoundName: String? = nil
+    
     var primaryText: String? = nil
     var primaryX: Double? = nil
     var primaryY: Double? = nil

@@ -137,8 +137,11 @@ class StoryPersistence {
     }
 
     static func buildScene(sceneDictionary: [String : Any]) -> Scene {
-        let primaryText = sceneDictionary["primaryText"] as? String
         let imageName = sceneDictionary["imageName"] as? String
+        let backgroundSoundName = sceneDictionary["backgroundSoundName"] as? String
+        let narrationSoundName = sceneDictionary["narrationSoundName"] as? String
+
+        let primaryText = sceneDictionary["primaryText"] as? String
         let primaryX = sceneDictionary["primaryX"] as? Double
         let primaryY = sceneDictionary["primaryY"] as? Double
         let primaryWidth = sceneDictionary["primaryWidth"] as? Double
@@ -149,6 +152,7 @@ class StoryPersistence {
         let primaryTransitionTimeIn = sceneDictionary["primaryTransitionTimeIn"] as? Double
         let primaryTransitionTimeOut = sceneDictionary["primaryTransitionTimeOut"] as? Double
         let primaryHasBorder = sceneDictionary["primaryHasBorder"] as? Bool
+
         let secondaryText = sceneDictionary["secondaryText"] as? String
         let secondaryX = sceneDictionary["secondaryX"] as? Double
         let secondaryY = sceneDictionary["secondaryY"] as? Double
@@ -162,9 +166,12 @@ class StoryPersistence {
         let secondaryHasBorder = sceneDictionary["secondaryHasBorder"] as? Bool
         
         var scene = Scene()
+
+        scene.imageName = imageName
+        scene.backgroundSoundName = backgroundSoundName
+        scene.narrationSoundName = narrationSoundName
         
         scene.primaryText = primaryText
-        scene.imageName = imageName
         scene.primaryX = primaryX
         scene.primaryY = primaryY
         scene.primaryWidth = primaryWidth
