@@ -86,6 +86,8 @@
           "secondaryWidth": 687,
           "secondaryHeight": 143,
           "secondaryColor": "255,255,255,255",
+          "secondaryFontName": "Champagne&Limousines-Italic",
+          "secondaryFontSize": 70,
           "secondaryTransitionTimeIn": 0.5,
           "secondaryTransitionTimeOut": 0.5
         },
@@ -104,112 +106,146 @@
         {
           "primaryText": "For some it happened very early, but for most it happened during teenage years",
           "imageName": "chapter1.3",
-          "primaryX": 67,
-          "primaryY": 59,
-          "primaryWidth": 976,
-          "primaryHeight": 450,
+          "primaryX": 785,
+          "primaryY": 57,
+          "primaryWidth": 980,
+          "primaryHeight": 483,
           "primaryFontName": "Champagne & Limousines",
           "primaryFontSize": 100,
-          "primaryHasBorder": true
+          "primaryHasBorder": true,
+          "primaryTransitionTimeIn": 0.5,
+          "primaryTransitionTimeOut": 0.5
         },
         {
           "primaryText": "it wasn’t a voice we heard close to us",
           "imageName": "chapter1.3",
-          "primaryX": 481,
-          "primaryY": 59,
-          "primaryWidth": 1421,
-          "primaryHeight": 99
+          "primaryX": 449,
+          "primaryY": 61,
+          "primaryWidth": 1461,
+          "primaryHeight": 178
         },
         {
-          "primaryText": "instead it was inside our own minds",
+          "secondaryText": "instead it was inside our \nown minds",
           "imageName": "chapter1.3",
-          "primaryX": 754,
-          "primaryY": 142,
-          "primaryWidth": 976,
-          "primaryHeight": 212
+          "secondaryX": 753,
+          "secondaryY": 280,
+          "secondaryWidth": 976,
+          "secondaryHeight": 217,
+          "secondaryFontName": "Champagne & Limousines",
+          "secondaryFontSize": 100,
+          "secondaryHasBorder": true,
+          "secondaryTransitionTimeIn": 0.5,
+          "secondaryTransitionTimeOut": 0.5
         },
         {
-          "primaryText": "in the minds of everyone, our friends, our families.",
+          "primaryText": "in the minds of everyone, \nour friends, our families.",
           "imageName": "chapter1.3",
-          "primaryX": 134,
-          "primaryY": 579,
-          "primaryWidth": 978,
-          "primaryHeight": 212
+          "primaryX": 784,
+          "primaryY": 159,
+          "primaryWidth": 1003,
+          "primaryHeight": 245
         },
         {
           "primaryText": "MONDARK was the window that connected us all together like nothing before",
           "imageName": "chapter1.4",
           "primaryX": 92,
           "primaryY": 185,
-          "primaryWidth": 1214,
+          "primaryWidth": 1261,
           "primaryHeight": 360,
           "primaryTransitionTimeIn": 1.5
         },
         {
-          "primaryText": "it was wonderful.",
-          "imageName": "chapter1.4",
-          "primaryX": 287,
-          "primaryY": 428,
-          "primaryWidth": 825,
-          "primaryHeight": 208,
-          "primaryTransitionTimeOut": 0.75,
-          "primaryTransitionTimeIn": 1.5
+          "secondaryText": "it was wonderful.",
+          "imageName": "chapter1.3",
+          "secondaryX": 92,
+          "secondaryY": 585,
+          "secondaryWidth": 1261,
+          "secondaryHeight": 117,
+          "secondaryFontName": "Champagne & Limousines",
+          "secondaryFontSize": 100,
+          "secondaryHasBorder": true,
+          "secondaryTransitionTimeIn": 0.5,
+          "secondaryTransitionTimeOut": 0.5
         },
         {
           "primaryText": "I don’t think so anymore.",
           "imageName": "chapter1.5",
-          "primaryX": 941,
+          "primaryX": 901,
           "primaryY": 400,
-          "primaryWidth": 926,
-          "primaryHeight": 99
+          "primaryWidth": 966,
+          "primaryHeight": 117,
+          "primaryTransitionTimeIn": 0.5,
+          "primaryTransitionTimeOut": 0.5
         },
         {
-          "primaryText": "A scarlet light shines upon the cup in front of me, sitting on top of the bar. Many colored lights illuminate the small club all around,",
+          "primaryText": "A scarlet light shines upon the cup \nin front of me, sitting on top of the \nbar. Many colored lights illuminate \nthe small club all around,",
           "imageName": "chapter1.6",
-          "primaryX": 56,
-          "primaryY": 107,
-          "primaryWidth": 1274,
-          "primaryHeight": 436
+          "primaryX": 43,
+          "primaryY": 92,
+          "primaryWidth": 1359,
+          "primaryHeight": 448
         },
         {
-          "primaryText": "a few patrons sit among the dirty tables and barely hold any conversation, a soothing low blues is being played by a band in the back, the mood is absolutely dark. I love it",
+          "primaryText": "a few patrons sit among the dirty tables \nand barely hold any conversation, a \nsoothing low blues is being played by \na band in the back, the mood is \nabsolutely dark.",
           "imageName": "chapter1.6",
-          "primaryX": 56,
-          "primaryY": 107,
-          "primaryWidth": 1484,
+          "primaryX": 34,
+          "primaryY": 96,
+          "primaryWidth": 1524,
           "primaryHeight": 546
         },
         {
-          "primaryText": "Being alone here, listening only to my thoughts and the songs, staring blankly at the cup, the bar and sometimes at the bartender’s weird moustache.",
-          "imageName": "chapter1.6",
-          "primaryX": 56,
-          "primaryY": 107,
-          "primaryWidth": 1484,
-          "primaryHeight": 436
+          "secondaryText": "I love it.",
+          "imageName": "chapter1.3",
+          "secondaryX": 589,
+          "secondaryY": 738,
+          "secondaryWidth": 414,
+          "secondaryHeight": 117,
+          "secondaryFontName": "Champagne & Limousines",
+          "secondaryFontSize": 100,
+          "secondaryTransitionTimeIn": 0.5,
+          "secondaryTransitionTimeOut": 0.5
         },
         {
-          "primaryText": "Joel is a friendly big guy, long dark hair combed back, and of course the long equally dark and thick moustache that ends ia a thin twirl, its a funny sight.",
+          "primaryText": "Being alone here, listening only to my \nthoughts and the songs, staring blankly \nat the cup, the bar and sometimes at \nthe bartender’s weird moustache.",
           "imageName": "chapter1.6",
           "primaryX": 56,
-          "primaryY": 107,
+          "primaryY": 95,
           "primaryWidth": 1484,
-          "primaryHeight": 436
+          "primaryHeight": 433
         },
         {
-          "primaryText": "I take a look at the clock up at the wall, why do they have such a old thing anyway?",
+          "primaryText": "Joel is a friendly big guy, long dark hair \ncombed back, and of course the long \nequally dark and thick moustache that \nends ia a thin twirl, its a funny sight.",
           "imageName": "chapter1.6",
           "primaryX": 56,
-          "primaryY": 107,
+          "primaryY": 95,
           "primaryWidth": 1484,
-          "primaryHeight": 317
+          "primaryHeight": 433
         },
         {
-          "primaryText": " I down my drink, it burns as is passes through my throat, standing up and with a nod to Joel I leave the club.",
+          "primaryText": "I take a look at the clock up at the \nwall, why do they have such a old \nthing anyway?",
           "imageName": "chapter1.6",
-          "primaryX": 56,
-          "primaryY": 107,
-          "primaryWidth": 1401,
-          "primaryHeight": 317
+          "primaryX": 69,
+          "primaryY": 95,
+          "primaryWidth": 1484,
+          "primaryHeight": 345
+        },
+        {
+          "secondaryText": "Most people nowadays don’t even \nknow how to read it, I take quite a bit \nof time myself. 5 o’clock,",
+          "imageName": "chapter1.6",
+          "secondaryX": 69,
+          "secondaryY": 511,
+          "secondaryWidth": 1484,
+          "secondaryHeight": 345,
+          "secondaryTransitionTimeIn": 0.5,
+          "secondaryTransitionTimeOut": 0.5
+        },
+        {
+          "primaryText": " I down my drink, it burns as is passes \nthrough my throat, standing up and \nwith a nod to Joel I leave the club.",
+          "imageName": "chapter1.6",
+          "primaryX": 69,
+          "primaryY": 95,
+          "primaryWidth": 1484,
+          "primaryHeight": 345
         },
         {
           "primaryText": "Exiting through the metal door that lead to a small passage on the side of the old Adrian Bridge,",
@@ -222,26 +258,30 @@
         {
           "primaryText": "a cold breeze hits me face causing a bit of a shiver, New Rooftown is always cold this time of year and …",
           "imageName": "chapter1.7",
-          "primaryX": 753,
-          "primaryY": 637,
+          "primaryX": 703,
+          "primaryY": 601,
           "primaryWidth": 1167,
-          "primaryHeight": 436
+          "primaryHeight": 419
         },
         {
-          "primaryText": "Friend, you disappeared from me again, are you alright?",
+          "primaryText": "Friend, you disappeared from \nme again, are you alright?",
           "imageName": "chapter1.7",
-          "primaryX": 742,
-          "primaryY": 113,
-          "primaryWidth": 1167,
-          "primaryHeight": 258
+          "primaryX": 722,
+          "primaryY": 169,
+          "primaryWidth": 1187,
+          "primaryHeight": 258,
+          "primaryFontName": "Champagne&Limousines-Italic",
+          "primaryFontSize": 100
         },
         {
           "primaryText": "I’m alright MONDARK.",
           "imageName": "chapter1.7",
-          "primaryX": 0,
-          "primaryY": 737,
-          "primaryWidth": 1167,
-          "primaryHeight": 113
+          "primaryX": 104,
+          "primaryY": 701,
+          "primaryWidth": 939,
+          "primaryHeight": 123,
+          "primaryFontName": "Champagne&Limousines",
+          "primaryFontSize": 100
         },
         {
           "primaryText": "You always disappear on me around this area, what have you been doing?",
@@ -249,23 +289,27 @@
           "primaryX": 742,
           "primaryY": 133,
           "primaryWidth": 1167,
-          "primaryHeight": 317
+          "primaryHeight": 345,
+          "primaryFontName": "Champagne&Limousines-Italic",
+          "primaryFontSize": 100
         },
         {
           "primaryText": "Nothing you need to worry about.",
           "imageName": "chapter1.7",
-          "primaryX": 0,
+          "primaryX": 140,
           "primaryY": 737,
-          "primaryWidth": 1167,
-          "primaryHeight": 238
+          "primaryWidth": 1027,
+          "primaryHeight": 238,
+          "primaryFontName": "Champagne&Limousines",
+          "primaryFontSize": 100
         },
         {
           "primaryText": "As I’m waling I notice a couple walking down the street, the seem distracted with each …",
           "imageName": "chapter1.7",
-          "primaryX": 105,
-          "primaryY": 197,
-          "primaryWidth": 1167,
-          "primaryHeight": 317
+          "primaryX": 85,
+          "primaryY": 181,
+          "primaryWidth": 1215,
+          "primaryHeight": 345
         },
         {
           "primaryText": "You missed you appointment to Dr. Willson",
@@ -273,15 +317,28 @@
           "primaryX": 742,
           "primaryY": 133,
           "primaryWidth": 1167,
-          "primaryHeight": 238
+          "primaryHeight": 238,
+          "primaryFontName": "Champagne&Limousines-Italic",
+          "primaryFontSize": 100
         },
         {
           "primaryText": "I don’t want to talk to him",
           "imageName": "chapter1.7",
-          "primaryX": 0,
+          "primaryX": 140,
           "primaryY": 737,
-          "primaryWidth": 1167,
-          "primaryHeight": 99
+          "primaryWidth": 1027,
+          "primaryHeight": 117,
+          "primaryFontName": "Champagne&Limousines",
+          "primaryFontSize": 100,
+          "secondaryText": "I hate that doctor.",
+          "imageName": "chapter1.6",
+          "secondaryX": 1113,
+          "secondaryY": 910,
+          "secondaryWidth": 746,
+          "secondaryHeight": 117,
+          "secondaryHasBorder": false,
+          "secondaryTransitionTimeIn": 0.5,
+          "secondaryTransitionTimeOut": 0.5
         },
         {
           "primaryText": "The couple ahead seems to notice me, a man and a woman, both around thirty and well off,",
@@ -289,15 +346,16 @@
           "primaryX": 68,
           "primaryY": 89,
           "primaryWidth": 1167,
-          "primaryHeight": 436
-        },
-        {
-          "primaryText": "their eyes grow wide and scared as they stare at my,",
-          "imageName": "chapter1.7",
-          "primaryX": 68,
-          "primaryY": 647,
-          "primaryWidth": 1167,
-          "primaryHeight": 238
+          "primaryHeight": 436,
+          "secondaryText": "their eyes grow wide and scared as they stare at my,",
+          "imageName": "chapter1.6",
+          "secondaryX": 68,
+          "secondaryY": 647,
+          "secondaryWidth": 1167,
+          "secondaryHeight": 238,
+          "secondaryHasBorder": true,
+          "secondaryTransitionTimeIn": 0.5,
+          "secondaryTransitionTimeOut": 0.5
         },
         {
           "primaryText": "soon they are both crossing the street in a hurry, a hoverer, seems like one of those new models, almost hits then in the head as the driver dodges to the side.",
