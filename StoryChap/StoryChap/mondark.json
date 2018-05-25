@@ -16,6 +16,7 @@
       "optionText": "primaryText",
       "scenes": [
         {
+          "backgroundSoundName": "futuristic",
           "primaryText": "Chapter 1 - Always",
           "imageName": "chapter1.1",
           "primaryX": 603,

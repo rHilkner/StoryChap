@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import AVFoundation
 
 extension GameViewController {
-    func changeScene(newScene currentScene: Scene){
+    func changeScene(newScene currentScene: Scene) {
+        // Ending last scene
+        self.stopNarrationSound()
+
+        // Starting current scene
         var transitionTimeIn = 0.5
         var transitionTimeOut = 0.5
         
@@ -18,13 +23,25 @@ extension GameViewController {
         }
         
         if currentScene.secondaryTransitionTimeOut == nil {
-            animateHideSceneText(label: labelPrimaryText, duration: transitionTimeOut)
+            self.animateHideSceneText(label: labelPrimaryText, duration: transitionTimeOut)
         } else {
-            animateHideSceneText(label: labelSecondaryText, duration: transitionTimeOut)
+            self.animateHideSceneText(label: labelSecondaryText, duration: transitionTimeOut)
+        }
+
+        if let currentImageForScene = currentScene.imageName {
+            self.backgroundImage.image = UIImage(named: currentImageForScene)
+        }
+
+        if let backgroundSoundForScene = currentScene.backgroundSoundName {
+            self.playBackgroundSound(named: backgroundSoundForScene)
+        }
+
+        if let narrationSoundForScene = currentScene.narrationSoundName {
+            self.playNarrationSound(named: narrationSoundForScene)
         }
         
         if currentScene.primaryText != nil {
-            setTextForPrimaryLabel(currentScene)
+            self.setTextForPrimaryLabel(currentScene)
         }
         
         if currentScene.secondaryText != nil {
@@ -55,10 +72,6 @@ extension GameViewController {
             } else {
                 self.labelPrimaryText.layer.borderWidth = 0
             }
-        }
-        
-        if let currentImageForScene = currentScene.imageName {
-            self.backgroundImage.image = UIImage(named: currentImageForScene)
         }
         
         if let x = currentScene.primaryX, let y = currentScene.primaryY,
@@ -125,5 +138,53 @@ extension GameViewController {
         UIView.animate(withDuration: duration, animations: {
             label.alpha = 0
         }, completion: nil)
+    }
+
+    /// Plays background sound of the game
+    func playBackgroundSound(named soundName: String) {
+        if soundName == "" {
+            self.stopBackgroundSound()
+            return
+        }
+        guard let soundAsset = NSDataAsset(name: soundName) else {
+            print("-> WARNING: narration sound asset found nil")
+            return
+        }
+
+        guard let backgroundSound = try? AVAudioPlayer(data: soundAsset.data, fileTypeHint: "mp3") else {
+            print("-> WARNING: narration sound found nil")
+            return
+        }
+
+        self.backgroundSound = backgroundSound
+        // Looping background sound forever
+        self.backgroundSound!.numberOfLoops = -1
+        self.backgroundSound!.play()
+    }
+
+    /// Plays sound for narration of the game
+    func playNarrationSound(named soundName: String) {
+        guard let soundAsset = NSDataAsset(name: soundName) else {
+            print("-> WARNING: narration sound asset found nil")
+            return
+        }
+
+        guard let narrationSound = try? AVAudioPlayer(data: soundAsset.data, fileTypeHint: "mp3") else {
+            print("-> WARNING: narration sound found nil")
+            return
+        }
+
+        self.narrationSound = narrationSound
+        self.narrationSound!.play()
+    }
+
+    /// Stops background sound of the game
+    func stopBackgroundSound() {
+        self.backgroundSound?.stop()
+    }
+
+    /// Stops sound for narration of the game
+    func stopNarrationSound() {
+        self.narrationSound?.stop()
     }
 }
